@@ -1,0 +1,37 @@
+.uxu-infographic {
+  height: 500px;
+
+}
+.uxu-infographic h2{
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+}
+.uxu-infographic-knob {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+
+}
+.uxu-infographic-knob div{
+  position: absolute;
+}
+.uxu-infographic #knob-img{
+  pointer-events: none;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+.uxu-infographics-tickets {
+  color: #FFF;
+  background: #000;
+  border-radius: 50em;
+  padding: 1em;
+  width: 4em;
+  height: 4em;
+  float: left;
+  text-align:center;
+  vertical-align: middle;
+}
+

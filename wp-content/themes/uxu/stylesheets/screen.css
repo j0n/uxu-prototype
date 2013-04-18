@@ -1,0 +1,174 @@
+/* line 17, ../../../../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/screen.scss */
+body {
+  font-family: Helvetica, Arial, san-serif;
+}
+
+/* line 7, ../sass/screen.scss */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 11, ../sass/screen.scss */
+img, iframe, embedd {
+  max-width: 100%;
+}
+
+/* line 14, ../sass/screen.scss */
+.logo {
+  margin: 2em 0;
+  display: block;
+}
+
+/* line 18, ../sass/screen.scss */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 22, ../sass/screen.scss */
+.banner {
+  width: 100%;
+  height: 2em;
+  background: #000;
+}
+
+/* line 27, ../sass/screen.scss */
+.circle {
+  color: #FFF;
+  font-size: 2em;
+  background: #000;
+  padding: 1.5em;
+  width: 4em;
+  height: 4em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 36, ../sass/screen.scss */
+.menu {
+  width: 100%;
+  overflow: hidden;
+  border: solid 1px #000;
+}
+/* line 40, ../sass/screen.scss */
+.menu .current_page_item {
+  background: #000;
+}
+/* line 42, ../sass/screen.scss */
+.menu .current_page_item a {
+  color: #FFF;
+}
+/* line 46, ../sass/screen.scss */
+.menu li {
+  padding: 0.5em 1em;
+  float: left;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+}
+
+/* line 53, ../sass/screen.scss */
+.uxu-ticket-status {
+  width: 90%;
+  padding: 1em 5%;
+  border: solid 1px #000;
+  overflow: hidden;
+}
+/* line 58, ../sass/screen.scss */
+.uxu-ticket-status h2 {
+  font-size: 1.5em;
+  float: left;
+  max-width: 50%;
+}
+
+/* line 64, ../sass/screen.scss */
+.uxu-ticket-button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: #68b481;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 1em;
+  float: left;
+}
+
+/* line 72, ../sass/screen.scss */
+.uxu-next-step {
+  float: left;
+}
+
+/* line 76, ../sass/screen.scss */
+.uxu-frontpage-first iframe {
+  width: 100%;
+}
