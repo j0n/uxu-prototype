@@ -14,6 +14,7 @@ function uxu_tickets_info(){
   $values = array(
     'current_ticket_url' => 'current_ticket_url',
     'current_ticket_price' => '240',
+    'current_ticket_left' => 30,
     'next_ticket_price' => '250',
   );
   include('view.php');
