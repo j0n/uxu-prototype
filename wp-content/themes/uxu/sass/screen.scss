@@ -1,8 +1,20 @@
 @import "compass/reset";
 @import "compass/css3";
+
 $highlight_color :  #68b481;
+@font-face {
+  font-family: 'BryantPro';
+  src: url('../fonts/BryantPro-BoldAltNo1.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/BryantPro-BoldAltNo1.eot?#iefix') format('embedded-opensourceentype'), /* IE6-IE8 */
+  url('../fonts/BryantPro-BoldAltNo1.woff') format('woff'), /* Modesdern Browsers */
+  url('../fonts/BryantPro-BoldAltNo1.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/BryantPro-BoldAltNo1.svt#BryantPro') format('svg');  /* Legacy iOS */
+}
 body{
-  font-family: Helvetica, Arial, san-serif;
+  font-family: BryantPro, Helvetica, Arial, san-serif;
+}
+h2 {
+  font-size: 2em;
 }
 a{
   color: #000;
@@ -16,7 +28,7 @@ img, iframe, embedd{
   display: block;
 }
 .wrapper {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .banner {
@@ -37,6 +49,7 @@ img, iframe, embedd{
   width: 100%;
   overflow: hidden;
   border: solid 1px #000;
+  text-transform: uppercase;
   .current_page_item{
     background: #000;
     a {
@@ -52,11 +65,11 @@ img, iframe, embedd{
 }
 .uxu-ticket-status {
   width: 90%;
-  padding: 1em 5%;
+  padding: 1.5em 5%;
   border: solid 1px #000;
   overflow: hidden;
-  h2 {
-    font-size: 1.5em;
+  h3 {
+    font-size: 1.3em;
     float: left;
     max-width: 50%;
   }
@@ -66,15 +79,33 @@ img, iframe, embedd{
   background: $highlight_color;
   color: #FFF;
   text-transform: uppercase;
-  padding: 1em;
+  padding: 0.6em 1.5em;
+  letter-spacing: 0.1em;
   float: left;
+  span {
+    padding: 0.2em  0 0 3em;
+    display: block;
+    font-size: 0.8em;
+    text-transform: lowercase;
+  }
 }
 .uxu-next-step{
   float: left;
+  padding: 0.5em 0;
+  margin: 0 2%;
+
 }
 .uxu-frontpage-first {
   iframe {
     width: 100%;
+  }
+}
+.home .widget_uxu_video_widget {
+  width: 80%;
+  margin: 2em 10%;
+  text-align: center;
+  h2 {
+    margin-bottom: 0.5em;
   }
 }
 

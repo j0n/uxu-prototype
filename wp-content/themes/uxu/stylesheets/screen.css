@@ -63,42 +63,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 4, ../sass/screen.scss */
-body {
-  font-family: Helvetica, Arial, san-serif;
+@font-face {
+  font-family: 'BryantPro';
+  src: url("../fonts/BryantPro-BoldAltNo1.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/BryantPro-BoldAltNo1.eot?#iefix") format("embedded-opensourceentype"), url("../fonts/BryantPro-BoldAltNo1.woff") format("woff"), url("../fonts/BryantPro-BoldAltNo1.ttf") format("truetype"), url("../fonts/BryantPro-BoldAltNo1.svt#BryantPro") format("svg");
+  /* Legacy iOS */
 }
 
-/* line 7, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
+body {
+  font-family: BryantPro, Helvetica, Arial, san-serif;
+}
+
+/* line 16, ../sass/screen.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 19, ../sass/screen.scss */
 a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 11, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 img, iframe, embedd {
   max-width: 100%;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 .logo {
   margin: 2em 0;
   display: block;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 .wrapper {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .banner {
   width: 100%;
   height: 2em;
   background: #000;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .circle {
   color: #FFF;
   font-size: 2em;
@@ -113,21 +126,22 @@ img, iframe, embedd {
   border-radius: 50%;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .menu {
   width: 100%;
   overflow: hidden;
   border: solid 1px #000;
+  text-transform: uppercase;
 }
-/* line 40, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .menu .current_page_item {
   background: #000;
 }
-/* line 42, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .menu .current_page_item a {
   color: #FFF;
 }
-/* line 46, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .menu li {
   padding: 0.5em 1em;
   float: left;
@@ -135,21 +149,21 @@ img, iframe, embedd {
   border-right: solid 1px #000;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .uxu-ticket-status {
   width: 90%;
-  padding: 1em 5%;
+  padding: 1.5em 5%;
   border: solid 1px #000;
   overflow: hidden;
 }
-/* line 58, ../sass/screen.scss */
-.uxu-ticket-status h2 {
-  font-size: 1.5em;
+/* line 71, ../sass/screen.scss */
+.uxu-ticket-status h3 {
+  font-size: 1.3em;
   float: left;
   max-width: 50%;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .uxu-ticket-button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -159,16 +173,37 @@ img, iframe, embedd {
   background: #68b481;
   color: #FFF;
   text-transform: uppercase;
-  padding: 1em;
+  padding: 0.6em 1.5em;
+  letter-spacing: 0.1em;
   float: left;
 }
+/* line 85, ../sass/screen.scss */
+.uxu-ticket-button span {
+  padding: 0.2em 0 0 3em;
+  display: block;
+  font-size: 0.8em;
+  text-transform: lowercase;
+}
 
-/* line 72, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .uxu-next-step {
   float: left;
+  padding: 0.5em 0;
+  margin: 0 2%;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .uxu-frontpage-first iframe {
   width: 100%;
+}
+
+/* line 103, ../sass/screen.scss */
+.home .widget_uxu_video_widget {
+  width: 80%;
+  margin: 2em 10%;
+  text-align: center;
+}
+/* line 107, ../sass/screen.scss */
+.home .widget_uxu_video_widget h2 {
+  margin-bottom: 0.5em;
 }

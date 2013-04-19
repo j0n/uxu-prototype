@@ -18,7 +18,7 @@ function uxu_widgets_init() {
       'name' =>       'UxU Frontpage Second',
       'id' => 'uxu_frontpage_second',
       'class' => 'uxu-frontpage-second',
-      'before_widget' => '<div>',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
     ));
 
@@ -26,7 +26,7 @@ function uxu_widgets_init() {
       'name' =>       'UxU Frontpage Third',
       'id' => 'uxu_frontpage_third',
       'class' => 'uxu-frontpage-third',
-      'before_widget' => '<div>',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
     ));
 
@@ -34,7 +34,7 @@ function uxu_widgets_init() {
       'name' =>       'UxU Frontpage Fourth',
       'id' => 'uxu_frontpage_fourth',
       'class' => 'uxu-frontpage-fourth',
-      'before_widget' => '<div>',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
     ));
 }
