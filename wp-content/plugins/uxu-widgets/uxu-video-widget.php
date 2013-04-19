@@ -27,7 +27,11 @@ class UxU_Video_Widget extends WP_Widget {
 		extract( $args );
 
 		$video_url = $instance['video_url'];
+		$video_title = $instance['video_title'];
 		echo $before_widget;
+		echo $before_title;
+      echo $video_title;
+		echo $after_title;
 		if (!empty($video_url)) {
 			echo wp_oembed_get($video_url, array('width'=>1100));
 		}
@@ -52,6 +56,7 @@ class UxU_Video_Widget extends WP_Widget {
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
 		$instance['video_url'] = strip_tags( $new_instance['video_url'] );
+		$instance['video_title'] = strip_tags( $new_instance['video_title'] );
 		return $instance;
 	}
 
@@ -69,11 +74,22 @@ class UxU_Video_Widget extends WP_Widget {
 		else {
 			$video_url = __( 'Video url', 'uxu' );
 		}
+		if ( isset( $instance[ 'video_title' ] ) ) {
+			$video_title = $instance[ 'video_title' ];
+		}
+		else {
+			$video_title = __( 'Title', 'uxu' );
+		}
 		?>
 		<p>
 		<label for="<?php echo $this->get_field_id( 'video_url' ); ?>"><?php _e( 'Video Url:' ); ?></label> 
 		<input class="widefat" id="<?php echo $this->get_field_id( 'video_url' ); ?>" name="<?php echo $this->get_field_name( 'video_url' ); ?>" type="text" value="<?php echo esc_attr( $video_url ); ?>" />
+
 		</p>
+    <p>
+		<label for="<?php echo $this->get_field_id( 'video_title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+		<input class="widefat" id="<?php echo $this->get_field_id( 'video_title' ); ?>" name="<?php echo $this->get_field_name( 'video_title' ); ?>" type="text" value="<?php echo esc_attr( $video_title ); ?>" />
+    </p>
 		<?php 
 	}
 
