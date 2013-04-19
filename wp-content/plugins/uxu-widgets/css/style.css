@@ -1,18 +1,21 @@
 .uxu-infographic {
   height: 500px;
-
+  position: relative;
+  border: solid 1px #000;
+  margin: 10px 0;
 }
 .uxu-infographic h2{
-  font-size: 2em;
+  font-size: 2.2em;
+  margin: 1em 0;
   text-align: center;
   width: 100%;
 }
 .uxu-infographic-knob {
   position: relative;
   height: 200px;
-  width: 200px;
-  margin: 0 auto;
-
+  min-width: 200px;
+  width: 20%;
+  float: left;
 }
 .uxu-infographic-knob div{
   position: absolute;
@@ -22,6 +25,17 @@
   position: absolute;
   top: 18px;
   left: 18px;
+}
+.uxu-infographics-time-holder {
+  text-align: right;
+  padding-top: 3em;
+  padding-right: 2%;
+  float: left;
+  width: 38%;
+}
+.uxu-infographics-vistors-holder {
+  padding-top: 3em;
+  float: left;
 }
 .uxu-infographics-tickets {
   color: #FFF;

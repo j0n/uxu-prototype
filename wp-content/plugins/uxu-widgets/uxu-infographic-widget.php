@@ -27,6 +27,7 @@ class UxU_Infographic_Widget extends WP_Widget {
     wp_enqueue_style( 'infographic-style' );
     wp_enqueue_script( 'jquery');
     wp_enqueue_script( 'jquery_knob', $js_url . 'jquery.knob.js', array('jquery'));
+    wp_enqueue_script( 'moment.js', $js_url . 'moment.min.js');
     wp_enqueue_script( 'uxu_infographic', $js_url . 'infographic.js', array('jquery'));
 		echo $before_widget;
     include_once dirname( __FILE__ ) . '/views/infographic.php';
