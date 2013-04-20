@@ -25,7 +25,7 @@
             </div>
             <div class="uxu-artist-list main">
               <?php query_posts( 'post_type=artists' ) ?>
-              <?php get_template_part( 'loop'); ?>
+              <?php get_template_part( 'loop', 'artists'); ?>
               <?php wp_reset_query(); ?>
             </div>
         </div><!-- #primary -->

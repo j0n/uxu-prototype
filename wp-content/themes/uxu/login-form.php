@@ -4,7 +4,7 @@ If you would like to edit this file, copy it to your current theme's directory a
 Theme My Login will always look in your theme's directory first, before using this default template.
 */
 ?>
-<div class="uxu-login-register-box" id="theme-my-login<?php $template->the_instance(); ?>">
+<div class="uxu-login-register-box uxu-login-box" id="theme-my-login<?php $template->the_instance(); ?>">
   <h3><?php _e('Login'); ?></h3>
 	<?php $template->the_action_template_message( 'login' ); ?>
 	<?php $template->the_errors(); ?>
@@ -25,7 +25,7 @@ Theme My Login will always look in your theme's directory first, before using th
 			<label for="rememberme<?php $template->the_instance(); ?>"><?php esc_attr_e( 'Remember Me' ); ?></label>
 		</p>
 		<p class="submit">
-			<input type="submit" name="wp-submit" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Log In' ); ?>" />
+			<input type="submit" name="wp-submit" class="button" id="wp-submit<?php $template->the_instance(); ?>" value="<?php esc_attr_e( 'Log In' ); ?>" />
 			<input type="hidden" name="redirect_to" value="<?php $template->the_redirect_url( 'login' ); ?>" />
 			<input type="hidden" name="instance" value="<?php $template->the_instance(); ?>" />
 			<input type="hidden" name="action" value="login" />

@@ -72,6 +72,9 @@ img {
 article {
   margin-bottom: 1em;
 }
+#primary {
+  clear: both;
+}
 .home {
   h3 {
     margin: 0.5em 0 0.3em;
@@ -214,11 +217,11 @@ article {
   }
 }
 .uxu-login-register-box {
-  float: left;
+  float: right;
   border: solid 1px #000;
   width: 45%;
   padding: 1em 1%;
-  margin: 0 1%;
+  margin: 0;
   label {
     display: block;
   }
@@ -232,6 +235,9 @@ article {
     background: $highlight_color;
     color: #FFF;
   }
+}
+.uxu-login-box {
+  float: left;
 }
 /* my page start */
 .uxu-user-page {
@@ -302,8 +308,48 @@ article {
   margin-top: 2em;
   padding-top: 2.5em;
 }
+/*blogg */
+.uxu-date{
+  width: 12%;
+  float: left;
+  border: solid 1px #000;
+  padding: 2em 0;
+  text-align: center;
+  text-transform: uppercase;
+  span {
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  .uxu-date-date{
+    font-size: 3em;
+  }
+}
+.inner-content {
+  width: 80%;
+  float: right;
+  padding: 0 0 2em;
+  margin-bottom: 2em;
+  .content-header {
+    margin: 0.5em 0;
+  }
+  a.post-read-more {
+    display: block;
+    margin: 1em 0;
+    color: $highlight_color;
+  }
+}
+.uxu-comments {
+  overflow: hidden;
+  margin: 2em 0;
+}
+.single .post {
+  margin-top: 1em;
+}
 .footer {
   margin-top: 4em;
+  margin-bottom: 1em;
+  overflow: hidden;
   .menu {
     text-transform: uppercase;
   }
@@ -338,14 +384,28 @@ article {
   .logo {
     width: 60%;
     margin: 1em 2%;
+    float: left;
   }
   .uxu-mobile-menu{
-    position: absolute;
-    top: 0.8em;
-    right: 2%;
     float: right;
+    margin-right: 2%;
+    max-width: 38%;
     min-height: 44px;
+    padding-top: 0.5em;
     display: block;
+  }
+  .usermenu{
+    width: 100%;
+    ul {
+      position: static;
+    }
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-menu li, .usermenu ul li {
+    width: 100%;
+    padding: 0.5em 0;
   }
   .uxu-ticket-status {
     padding: 1em 5% 0.5em;
@@ -374,15 +434,12 @@ article {
       padding-left: 1%;
     }
   }
-  .header-menu {
-    display: none;
-  }
-  .header-menu li {
-    width: 100%;
-  }
-  .my-product h2 {
+  .products h2 {
     width: 45%;
     text-align: left;
     line-height: 1.1em;
+  }
+  .uxu-share-pass-info-btn {
+    padding: 0.5em 1em;
   }
 }
