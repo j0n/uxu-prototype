@@ -331,8 +331,9 @@ article {
   float: right;
   padding: 0 0 2em;
   margin-bottom: 2em;
-  .content-header {
+  h2.content-header {
     margin: 0.5em 0;
+    text-align: left;
   }
   a.post-read-more {
     display: block;
