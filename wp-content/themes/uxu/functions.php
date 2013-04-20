@@ -41,6 +41,8 @@ function uxu_widgets_init() {
     register_sidebar( array(
       'name' =>       'UxU Below menu',
       'id' => 'uxu_below_menu_first',
+      'before_widget' => '',
+      'after_widget'  => '',
     ));
 
     register_sidebar( array(
