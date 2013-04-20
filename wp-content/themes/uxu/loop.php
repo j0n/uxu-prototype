@@ -23,18 +23,20 @@
           <?php the_post_thumbnail('large'); ?>
         </a>
       <?php endif; ?>
-      <h2 class="content-header">
-        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-      </h2>
-      <?php if(is_single()): ?>
-        <?php the_content(); ?>
-        <div class="uxu-comments">
-          <?php comments_template('true'); ?>
-        </div>
-      <?php else: ?>
-        <?php the_excerpt(); ?>
-        <a class="post-read-more" href="<?php the_permalink();?>"><?php _e('READ MORE'); ?></a>
-      <?php endif; ?>
+      <div class="inner-text-content">
+        <h2 class="content-header">
+          <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+        </h2>
+        <?php if(is_single()): ?>
+          <?php the_content(); ?>
+          <div class="uxu-comments">
+            <?php comments_template('true'); ?>
+          </div>
+        <?php else: ?>
+          <?php the_excerpt(); ?>
+          <a class="post-read-more" href="<?php the_permalink();?>"><?php _e('READ MORE'); ?></a>
+        <?php endif; ?>
+       </div>
     </div>
   </article>
 <?php endwhile; ?>
