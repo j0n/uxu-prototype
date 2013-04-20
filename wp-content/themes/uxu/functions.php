@@ -2,8 +2,6 @@
 error_reporting(E_ALL);
 ini_set('display_errors', TRUE);
 ini_set('display_startup_errors', TRUE);
-update_option('siteurl','http://10.0.1.58/wp/');
-update_option('home','http://10.0.1.58/wp/');
 
 add_theme_support( 'post-thumbnails' );
 register_nav_menu( 'primary', __( 'Primary Menu') );
