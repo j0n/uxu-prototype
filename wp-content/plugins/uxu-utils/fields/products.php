@@ -1,14 +1,5 @@
 <?php
 
-// Fields 
-add_action('acf/register_fields', 'my_register_fields');
-
-function my_register_fields()
-{
-	//include_once('add-ons/acf-repeater/repeater.php');
-	//include_once('add-ons/acf-gallery/gallery.php');
-	//include_once('add-ons/acf-flexible-content/flexible-content.php');
-}
 
 // Options Page 
 //include_once( 'add-ons/acf-options-page/acf-options-page.php' );
