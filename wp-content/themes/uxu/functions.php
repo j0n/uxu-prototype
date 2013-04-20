@@ -39,9 +39,14 @@ add_filter( 'wp_nav_menu_items', 'add_login_out_item_to_menu', 50, 2 );
 
 function uxu_widgets_init() {
     register_sidebar( array(
+      'name' =>       'UxU Below menu',
+      'id' => 'uxu_below_menu_first',
+    ));
+
+    register_sidebar( array(
       'name' =>       'UxU Frontpage First',
       'id' => 'uxu_frontpage_first',
-      'class' => array('uxu-frontpage-first'),
+      'class' => 'uxu-frontpage-first',
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
     ));

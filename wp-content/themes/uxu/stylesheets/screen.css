@@ -604,21 +604,34 @@ article {
 }
 
 /* line 380, ../sass/screen.scss */
+.single .artists {
+  width: 90%;
+  padding: 1.5em 5%;
+  border: solid 1px #000;
+  margin-top: 1em;
+  padding-top: 0;
+}
+/* line 384, ../sass/screen.scss */
+.single .artists h1 {
+  margin-top: 0.5em;
+}
+
+/* line 388, ../sass/screen.scss */
 .footer {
   margin-top: 4em;
   margin-bottom: 1em;
   overflow: hidden;
 }
-/* line 384, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .footer .menu {
   text-transform: uppercase;
 }
-/* line 387, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 .footer li {
   display: inline-block;
   border-right: solid 1px #000;
 }
-/* line 390, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .footer li a {
   display: block;
   padding: 0.2em 0.3em 0 0;
@@ -626,13 +639,13 @@ article {
 
 @media all and (max-width: 1199px) {
   /* if screen same as page, add margin */
-  /* line 399, ../sass/screen.scss */
+  /* line 407, ../sass/screen.scss */
   .page #primary {
     width: 90%;
     padding: 1.5em 5%;
     border: solid 1px #000;
   }
-  /* line 401, ../sass/screen.scss */
+  /* line 409, ../sass/screen.scss */
   .page #primary .main {
     width: 100%;
     padding: 0;
@@ -640,30 +653,30 @@ article {
   }
 }
 @media all and (max-width: 999px) {
-  /* line 409, ../sass/screen.scss */
+  /* line 417, ../sass/screen.scss */
   .uxu-ticket-status h3 {
     max-width: 30%;
   }
 
-  /* line 412, ../sass/screen.scss */
+  /* line 420, ../sass/screen.scss */
   .uxu-date {
     width: 20%;
   }
 
-  /* line 415, ../sass/screen.scss */
+  /* line 423, ../sass/screen.scss */
   .inner-content {
     width: 70%;
   }
 }
 @media all and (max-width: 749px) {
-  /* line 421, ../sass/screen.scss */
+  /* line 429, ../sass/screen.scss */
   .logo {
     width: 60%;
     margin: 1em 2%;
     float: left;
   }
 
-  /* line 426, ../sass/screen.scss */
+  /* line 434, ../sass/screen.scss */
   .uxu-mobile-menu {
     float: right;
     margin-right: 2%;
@@ -673,32 +686,32 @@ article {
     display: block;
   }
 
-  /* line 434, ../sass/screen.scss */
+  /* line 442, ../sass/screen.scss */
   .usermenu {
     width: 100%;
   }
-  /* line 436, ../sass/screen.scss */
+  /* line 444, ../sass/screen.scss */
   .usermenu ul {
     position: static;
   }
 
-  /* line 440, ../sass/screen.scss */
+  /* line 448, ../sass/screen.scss */
   .header-menu {
     display: none;
   }
 
-  /* line 443, ../sass/screen.scss */
+  /* line 451, ../sass/screen.scss */
   .header-menu li, .usermenu ul li {
     width: 100%;
     padding: 0.5em 0;
   }
 
-  /* line 447, ../sass/screen.scss */
+  /* line 455, ../sass/screen.scss */
   .uxu-ticket-status {
     padding: 1em 5% 0.5em;
   }
 
-  /* line 450, ../sass/screen.scss */
+  /* line 458, ../sass/screen.scss */
   .uxu-ticket-status h3 {
     max-width: 100%;
     width: 100%;
@@ -706,7 +719,7 @@ article {
     display: none;
   }
 
-  /* line 456, ../sass/screen.scss */
+  /* line 464, ../sass/screen.scss */
   .uxu-ticket-button {
     text-align: center;
     width: 96%;
@@ -714,42 +727,42 @@ article {
     padding-right: 2%;
   }
 
-  /* line 462, ../sass/screen.scss */
+  /* line 470, ../sass/screen.scss */
   .uxu-ticket-button span {
     padding-left: 0;
   }
 
-  /* line 465, ../sass/screen.scss */
+  /* line 473, ../sass/screen.scss */
   .uxu-next-step {
     width: 100%;
     padding-right: 0;
     text-align: center;
   }
-  /* line 469, ../sass/screen.scss */
+  /* line 477, ../sass/screen.scss */
   .uxu-next-step p {
     display: inline;
     padding-left: 1%;
   }
 
-  /* line 474, ../sass/screen.scss */
+  /* line 482, ../sass/screen.scss */
   .products h2 {
     width: 45%;
     text-align: left;
     line-height: 1.1em;
   }
 
-  /* line 479, ../sass/screen.scss */
+  /* line 487, ../sass/screen.scss */
   .uxu-share-pass-info-btn {
     padding: 0.5em 1em;
   }
 
-  /* line 483, ../sass/screen.scss */
+  /* line 491, ../sass/screen.scss */
   .uxu-date {
     width: 25%;
     padding: 1em 0;
   }
 
-  /* line 487, ../sass/screen.scss */
+  /* line 495, ../sass/screen.scss */
   .inner-content {
     width: 73%;
   }

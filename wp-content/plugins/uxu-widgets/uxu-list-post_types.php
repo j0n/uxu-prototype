@@ -1,4 +1,3 @@
-<?php get_post_types( $args, $output, $operator ) ?>
 <?php
 /**
  * Adds UxU_Video_Widget widget.

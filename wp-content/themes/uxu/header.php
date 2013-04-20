@@ -33,7 +33,5 @@
             <?php wp_nav_menu( array( 'theme_location' => 'loginmenu' ) ); ?>
           <?php endif; ?>
         </nav>
-        <?php if( function_exists('uxu_tickets_info')): ?>
-          <?php uxu_tickets_info(); ?>
-        <?php endif ?>
+        <?php if ( dynamic_sidebar('uxu_below_menu_first') ) : ?> <?php endif; ?>
       </header>
