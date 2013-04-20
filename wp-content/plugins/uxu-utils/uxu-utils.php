@@ -9,6 +9,10 @@ Description: Plugin used UxU utilis for the prototype
 Version: 0.0.1
 Author: Jon
 */
+
+include_once dirname( __FILE__ ) . '/fields/products.php';
+include_once dirname( __FILE__ ) . '/fields/artists.php';
+
 add_action('init', 'create_post_type');
 
 function create_post_type() {

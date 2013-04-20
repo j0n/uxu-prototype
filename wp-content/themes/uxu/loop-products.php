@@ -12,7 +12,7 @@
     <h2>
       <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
     </h2>
-    <a class="button buy-product-button"  href="#<?php the_field('product_number'); ?>"><?php _e('Köp'); ?></a>
+    <a class="button buy-product-button"  href="<?php the_field('product_link'); ?>"><?php _e('Köp'); ?></a>
   </article>
 <?php endwhile; ?>
 <?php endif; ?>
