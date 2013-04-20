@@ -1,4 +1,4 @@
-
+<?php
 
 // Fields 
 add_action('acf/register_fields', 'my_register_fields');
