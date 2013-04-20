@@ -1,4 +1,6 @@
+<?php 
 /**
+ *
  *  Install Add-ons
  *  
  *  The following code will include all 4 premium Add-Ons in your theme.
