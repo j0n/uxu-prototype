@@ -17,10 +17,25 @@ function uxu_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'uxu_scripts' );
+
 add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
 function my_login_redirect( $redirect_to, $request, $user ) {
       return home_url( '/me' );
 }
+
+
+function add_login_out_item_to_menu( $items, $args ){
+
+  if( $args->theme_location != 'usermenu' )
+    return $items; 
+
+  
+  $link = '<a href="' . wp_logout_url( home_url('/')) . '" title="' .  __( 'Logout' ) .'">' . __( 'Logout' ) . '</a>';
+  
+  return $items.= '<li id="log-in-out-link" class="menu-item menu-type-link">'. $link . '</li>';
+}
+add_filter( 'wp_nav_menu_items', 'add_login_out_item_to_menu', 50, 2 );
+
 
 function uxu_widgets_init() {
     register_sidebar( array(
