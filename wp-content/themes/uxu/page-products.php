@@ -1,9 +1,10 @@
 <?php
 /**
+ * Template Name: Products List page
  *
- */
-get_header();
- ?>
+ */ ?>
+ 
+<?php get_header(); ?>
         <div id="primary">
             <div id="content" role="main">
                 <?php while ( have_posts() ) : the_post(); ?>
@@ -13,16 +14,20 @@ get_header();
                     </header><!-- .entry-header -->
                     <?php if (has_post_thumbnail()) : ?>
                       <div class="page-image-holder">
-                        <?php the_post_thumbnail(array('large')); ?>
+                        <?php the_post_thumbnail('large'); ?>
                       </div>
                     <?php endif; ?>
                     <div class="entry-content">
                         <?php the_content(); ?>
-                    </div><!-- .entry-content -->
-                </article><!-- #post-<?php the_ID(); ?> -->
+                    </div>
+                </article>
                 <?php endwhile; // end of the loop. ?>
-
-            </div><!-- #content -->
+            </div>
+            <div class="uxu-product-list">
+              <?php query_posts( 'post_type=products' ) ?>
+              <?php get_template_part( 'loop', 'products'); ?>
+              <?php wp_reset_query(); ?>
+            </div>
         </div><!-- #primary -->
 
 <?php get_footer(); ?>

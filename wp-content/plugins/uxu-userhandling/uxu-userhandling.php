@@ -9,9 +9,9 @@ Description: Plugin used for prototype of UxU site
 Version: 0.0.1
 Author: Jon
 */
-error_reporting(E_ALL);
-ini_set('display_errors', TRUE);
-ini_set('display_startup_errors', TRUE);
+
+include_once dirname( __FILE__ ) . '/uxu-userhandling-my-products-widget.php';
+include_once dirname( __FILE__ ) . '/uxu-userhangling-register.php';
 function uxu_get_extra_user_fields() {
   $fields = array(
     array(
@@ -48,14 +48,10 @@ function show_extra_profile_fields( $user ) {
   $fields = uxu_get_extra_user_fields();
 ?>
 
-	<h3><?php _e('Extra Profile Information', 'frontendprofile'); ?></h3>
-
 	<table class="form-table">
     <?php foreach ($fields as $field) : ?>
       <tr>
         <th><label for="<?php echo $field['id']; ?>"><?php _e($field['title']); ?></label></th>
-        <?php echo 'fuck'. the_author_meta( 'city', $user->ID ); ?>
-
         <td>
           <input type="text" name="<?php echo $field['id']; ?>" id="uxu-<?php echo $field['id']; ?>" value="<?php echo esc_attr( get_the_author_meta( $field['id'], $user->ID ) ); ?>" class="regular-text" /><br />
           <span class="description"><?php _e($field['description']); ?></span>

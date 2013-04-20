@@ -23,12 +23,17 @@ class UxU_Infographic_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		extract( $args );
     $js_url = plugins_url( 'uxu-widgets/js/', __DIR__);
+    $img_path = plugins_url( 'uxu-widgets/img/', __DIR__);
+    $data = array(
+      'imgPath' => $img_path
+    );
     wp_register_style( 'infographic-style', plugins_url('css/style.css', __FILE__) );
     wp_enqueue_style( 'infographic-style' );
     wp_enqueue_script( 'jquery');
     wp_enqueue_script( 'jquery_knob', $js_url . 'jquery.knob.js', array('jquery'));
     wp_enqueue_script( 'moment.js', $js_url . 'moment.min.js');
     wp_enqueue_script( 'uxu_infographic', $js_url . 'infographic.js', array('jquery'));
+    wp_localize_script('uxu_infographic', 'info', $data);
 		echo $before_widget;
     include_once dirname( __FILE__ ) . '/views/infographic.php';
 		echo $after_widget;

@@ -11,4 +11,5 @@ Author: Jon
 */
 
 include_once dirname( __FILE__ ) . '/uxu-video-widget.php';
+include_once dirname( __FILE__ ) . '/uxu-list-post_types.php';
 include_once dirname( __FILE__ ) . '/uxu-infographic-widget.php';

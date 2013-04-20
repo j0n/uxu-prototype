@@ -2,6 +2,22 @@
 @import "compass/css3";
 
 $highlight_color :  #68b481;
+@mixin main {
+  width: 90%;
+  padding: 1.5em 5%;
+  border: solid 1px #000;
+}
+@mixin button {
+  @include border-radius(5px);
+  background: $highlight_color;
+  max-width: 100%;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  &:hover {
+    color: #000;
+  }
+}
 @font-face {
   font-family: 'BryantPro';
   src: url('../fonts/BryantPro-BoldAltNo1.eot'); /* IE9 Compat Modes */
@@ -13,8 +29,35 @@ $highlight_color :  #68b481;
 body{
   font-family: BryantPro, Helvetica, Arial, san-serif;
 }
+p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  a {
+    color: $highlight_color;
+  }
+}
+.button {
+  @include button();
+}
+.main {
+  @include main();
+}
+a:hover {
+  color: $highlight_color;
+}
+h1 {
+  font-size: 3.6em;
+  text-align: center;
+  margin: 1em 0 0.2em;
+}
 h2 {
-  font-size: 2em;
+  font-size: 2.4em;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+h3 {
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
 }
 a{
   color: #000;
@@ -22,6 +65,36 @@ a{
 }
 img, iframe, embedd{
   max-width: 100%;
+}
+img {
+  height: auto;
+}
+article {
+  margin-bottom: 1em;
+}
+.home {
+  h3 {
+    margin: 0.5em 0 0.3em;
+    font-size: 2.4em;
+  }
+  article {
+    margin-bottom: 2em;
+  }
+  .widget_pageexcerptwidget {
+    text-align: center;
+  }
+  .widget_pageexcerptwidget p {
+    text-align: left;
+    margin-top: 1em;
+    @include columns(20em 2)
+  }
+}
+.page-image-holder {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.page .entry-content{
+    @include columns(20em 2)
 }
 .logo {
   margin: 2em 0;
@@ -45,9 +118,14 @@ img, iframe, embedd{
   height: 4em;
   @include border-radius(50%);
 }
-.menu{
+.uxu-mobile-menu{
+  text-transform: uppercase;
+  font-size: 2em;
+  display: none;
+}
+.header-menu{
   width: 100%;
-  overflow: hidden;
+  float: left;
   border: solid 1px #000;
   text-transform: uppercase;
   .current_page_item{
@@ -57,15 +135,40 @@ img, iframe, embedd{
     }
   }
   li {
-    padding: 0.5em 1em;
+    width: 12.5%;
+    text-align: center;
     float: left;
     border-left: solid 1px #000;
     border-right: solid 1px #000;
   }
+  a {
+    display: block;
+    width: 100%;
+    padding: 0.5em 0;
+  }
+}
+.usermenu{
+  float: left;
+  width: 12.5%;
+  padding: 0;
+  position: relative;
+  ul {
+    position: absolute;
+    width: 100%;
+  }
+  li:first-child{
+    display: block;
+  }
+  li {
+    display: none;
+    background: #FFF;
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
 .uxu-ticket-status {
-  width: 90%;
-  padding: 1.5em 5%;
+  @include main();
   border: solid 1px #000;
   overflow: hidden;
   h3 {
@@ -75,12 +178,8 @@ img, iframe, embedd{
   }
 }
 .uxu-ticket-button {
-  @include border-radius(5px);
-  background: $highlight_color;
-  color: #FFF;
-  text-transform: uppercase;
+  @include button();
   padding: 0.6em 1.5em;
-  letter-spacing: 0.1em;
   float: left;
   span {
     padding: 0.2em  0 0 3em;
@@ -100,6 +199,12 @@ img, iframe, embedd{
     width: 100%;
   }
 }
+.uxu-frontpage-fourth, .uxu-frontpage-third{
+  @include main();
+  margin: 0 auto;
+  border: solid 1px #000;
+  margin: 1em 0;
+}
 .home .widget_uxu_video_widget {
   width: 80%;
   margin: 2em 10%;
@@ -108,4 +213,176 @@ img, iframe, embedd{
     margin-bottom: 0.5em;
   }
 }
+.uxu-login-register-box {
+  float: left;
+  border: solid 1px #000;
+  width: 45%;
+  padding: 1em 1%;
+  margin: 0 1%;
+  label {
+    display: block;
+  }
+  input {
+    width: 98%;
+    border: solid 1px #DDD;
+    font-size: 1.2em;
+    padding: 0.5em 1%;
+  }
+  .submit input{
+    background: $highlight_color;
+    color: #FFF;
+  }
+}
+/* my page start */
+.uxu-user-page {
+  @include main();
+  padding: 2em 5%;
+  border: solid 1px #000;
+  margin-top: 2em;
+}
+.uxu-user-festival-pass {
+  border-bottom: solid 1px #000;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+.uxu-user-festival-pass-info { 
+  h2, h3, a{
+    text-align: left;
+  }
+  h3, a{
+    font-size: 1.5em;
+  }
+}
+.uxu-share-pass-info {
+  text-align: center;
+  padding: 3em 0 2em 0;
+  width: 100%;
+}
+.uxu-share-pass-info-btn {
+  @include button();
+  max-width: 100%;
+  font-size: 1.6em;
+  padding: 0.5em 2em;
+}
+.uxu-user-other-products {
+  overflow: hidden;
+}
+.products {
+  width: 100%;
+  float: left;
+  img, a {
+    float: left;
+    line-height: 50px;
+  }
+  h2 {
+    float: left;
+    padding-top: 0.2em;
+    width: 30%;
+    font-size: 1.6em;
+    margin-bottom: 0;
+  }
+  img {
+    margin-right: 2%;
+  }
+}
+.uxu-user-below {
+  @include main();
+  border: solid 1px #000;
+  margin-top: 2em;
+  overflow: hidden;
+}
+/* end user page */
+.buy-product-button {
+  padding: 0em 1.5em;
+}
+.uxu-product-list {
+  @include main();
+  border: solid 1px #000;
+  overflow: hidden;
+  margin-top: 2em;
+  padding-top: 2.5em;
+}
+.footer {
+  margin-top: 4em;
+  .menu {
+    text-transform: uppercase;
+  }
+  li {
+    display: inline-block;
+    border-right: solid 1px #000;
+    a {
+      display: block;
+      padding: 0.2em 0.3em 0 0;
+    }
+  }
+}
 
+@media all and (max-width: 1199px) {
+  /* if screen same as page, add margin */
+  .page #primary{
+    @include main();
+    .main {
+      width: 100%;
+      padding: 0;
+      border: none;
+    }
+  }
+}
+@media all and (max-width: 999px) {
+  .uxu-ticket-status h3 {
+    max-width: 30%;
+  }
+}
+
+@media all and (max-width: 749px) {
+  .logo {
+    width: 60%;
+    margin: 1em 2%;
+  }
+  .uxu-mobile-menu{
+    position: absolute;
+    top: 0.8em;
+    right: 2%;
+    float: right;
+    min-height: 44px;
+    display: block;
+  }
+  .uxu-ticket-status {
+    padding: 1em 5% 0.5em;
+  }
+  .uxu-ticket-status h3 {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .uxu-ticket-button {
+    text-align: center;
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .uxu-ticket-button span {
+    padding-left: 0;
+  }
+  .uxu-next-step {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+    p {
+      display: inline;
+      padding-left: 1%;
+    }
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-menu li {
+    width: 100%;
+  }
+  .my-product h2 {
+    width: 45%;
+    text-align: left;
+    line-height: 1.1em;
+  }
+}

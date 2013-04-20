@@ -13,4 +13,9 @@
     <h3><?php _e('Festival passes sold', 'uxu'); ?></h3>
     <span class="uxu-infographics-vistors"> </span>
   </div>
+  <div class="uxu-infographics-stage">
+    <div class="bgStep" id="bgStep1" >
+      <img src="<?php echo plugins_url('/img/', __DIR__) ?>/1_anim.png" />
+    </div>
+  </div>
 </div>

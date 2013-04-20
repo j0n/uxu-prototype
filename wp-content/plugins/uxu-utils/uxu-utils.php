@@ -15,13 +15,25 @@ function create_post_type() {
   register_post_type('curators',
     array(
       'labels' => array(
-        'name' => __('Curators', 'ux' ),
+        'name' => __('Curators', 'uxu' ),
         'singular_name' => __( 'Curator' )
       ),
       'public' => true,
       'supports' => array( 'title', 'editor', 'comments', 'post-templates', 'thumbnail'),
       'has_archive' => true,
       'rewrite' => array('slug' =>__('curator')),
+    )
+  );
+  register_post_type('products',
+    array(
+      'labels' => array(
+        'name' => __('Products', 'uxu' ),
+        'singular_name' => __( 'Product' )
+      ),
+      'public' => true,
+      'supports' => array( 'title', 'editor', 'comments', 'post-templates', 'thumbnail'),
+      'has_archive' => true,
+      'rewrite' => array('slug' =>__('product')),
     )
   );
   register_post_type('artists',
