@@ -223,6 +223,12 @@ article {
   padding: 1em 2%;
   margin: 1em 0;
 }
+.error {
+  width: 96%;
+  padding: 1em 2%;
+  margin: 1em 0;
+  background: #FF7373;
+}
 .uxu-login-register-box {
   float: right;
   border: solid 1px #000;
@@ -239,6 +245,7 @@ article {
     padding: 0.5em 1%;
   }
   .submit input{
+    cursor: pointer;
     border: none;
     background: $highlight_color;
     color: #FFF;

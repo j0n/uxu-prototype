@@ -94,3 +94,17 @@ function uxu_widgets_init() {
     ));
 }
 add_action( 'widgets_init', 'uxu_widgets_init' );
+
+
+
+function tml_redirect_url( $url, $action ) {
+  if ( 'register' == $action )
+    $url = home_url('/me');
+  return $url;
+}
+add_filter( 'tml_redirect_url', 'tml_redirect_url', 10, 2 );
+
+function tml_new_user_registered( $user_id ) {
+  wp_set_auth_cookie( $user_id );
+}
+add_action( 'tml_new_user_registered', 'tml_new_user_registered' );
