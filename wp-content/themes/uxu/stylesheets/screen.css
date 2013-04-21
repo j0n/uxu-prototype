@@ -377,8 +377,8 @@ article {
 .message {
   background: #68b481;
   width: 96%;
-  padding: 1em 1%;
-  margin: 1em 1%;
+  padding: 1em 2%;
+  margin: 1em 0;
 }
 
 /* line 226, ../sass/screen.scss */
