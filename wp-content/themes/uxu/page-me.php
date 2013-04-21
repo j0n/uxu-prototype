@@ -7,7 +7,6 @@
   <?php wp_redirect( home_url('/login') ); ?>
 <?php else: ?>
   <?php get_header(); ?>
-  <?php if ( is_user_logged_in() ): ?>
     <?php global $current_user; ?>
     <?php get_currentuserinfo(); ?>
     <div class="uxu-user-page">
@@ -35,3 +34,4 @@
     </div>
   <?php get_footer(); ?>
 <?php endif; ?>
+
