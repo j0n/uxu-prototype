@@ -217,6 +217,12 @@ article {
     margin-bottom: 0.5em;
   }
 }
+.message{
+  background: $highlight_color;
+  width: 96%;
+  padding: 1em 1%;
+  margin: 1em 1%;
+}
 .uxu-login-register-box {
   float: right;
   border: solid 1px #000;
