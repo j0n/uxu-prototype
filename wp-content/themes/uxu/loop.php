@@ -30,7 +30,7 @@
         <?php if(is_single()): ?>
           <?php the_content(); ?>
           <div class="uxu-comments">
-            <?php comments_template('true'); ?>
+            [Kommentarer]
           </div>
         <?php else: ?>
           <?php the_excerpt(); ?>
