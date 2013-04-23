@@ -17,7 +17,7 @@
         
   <!-- Wrapper -->
   <div class="wrapper">      
-      <header>
+      <header class="page-header">
         <a class="logo" href="<?php echo esc_url(home_url('/')); ?>">
           <img src="<?php echo get_template_directory_uri();  ?>/images/logo.jpg" alt="logo" />
         </a>
@@ -35,6 +35,7 @@
               <?php else: ?>
                 <?php wp_nav_menu( array( 'theme_location' => 'loginmenu' ) ); ?>
               <?php endif; ?>
+              <a class="uxu-change-lang" href="#">In english</a>
             </nav>
             <?php if ( dynamic_sidebar('uxu_below_menu_first') ) : ?> <?php endif; ?>
           </div>

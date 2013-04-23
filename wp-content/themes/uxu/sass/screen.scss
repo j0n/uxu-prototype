@@ -129,6 +129,9 @@ article {
   font-size: 2em;
   display: none;
 }
+.page-header{
+  position: relative;
+}
 .header-menu{
   width: 100%;
   float: left;
@@ -151,6 +154,12 @@ article {
     display: block;
     width: 100%;
     padding: 0.5em 0;
+  }
+  a.uxu-change-lang {
+    position: absolute;
+    top: 1em;
+    right: 0;
+    width: auto;
   }
 }
 .usermenu{
@@ -183,9 +192,11 @@ article {
     float: left;
     max-width: 56%;
   }
-  #uxu-ticket-status-festival-length, u {
+  #uxu-ticket-status-festival-length {
     color: $mark_color;
     text-decoration: none;
+  }
+  u {
      white-space: nowrap;
   }
 }
@@ -468,6 +479,9 @@ article {
     max-width: 1200px;
     margin: 0 auto;
   }
+  .uxu-change-lang {
+    display: none;
+  }
 }
 .footer {
   margin-top: 4em;
@@ -531,6 +545,13 @@ article {
   }
   .header-menu {
     display: none;
+    a.uxu-change-lang {
+      width: 100%;
+      text-align: center;
+      position: static;
+      float: left;
+      padding: 0.5em 0;
+    }
   }
   .header-menu li, .usermenu ul li {
     width: 100%;
