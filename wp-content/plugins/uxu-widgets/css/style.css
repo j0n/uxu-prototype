@@ -47,6 +47,7 @@
   color: #ff8369;
 }
 .uxu-infographics-time-holder {
+  max-width: 35%;
   padding-top: 3em;
   float: left;
 }

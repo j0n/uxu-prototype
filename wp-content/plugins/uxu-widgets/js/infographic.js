@@ -131,12 +131,6 @@
            this.$knob.trigger( 'configure', { "fgColor":"#000000" });
            this.bottom = false;
          }
-          if (this.visitors > this.maxThreshold) {
-            this.$visitors.html('SOLD OUT');
-          }
-          else {
-            this.$visitors.html(this.visitors);
-          }
           if (this.visitors > 15015) {
             this.price = 1450;
           }
@@ -158,8 +152,14 @@
           else {
             this.price = (Math.floor(this.visitors/100) * 4) + 466;
           }
+          if (this.visitors > this.maxThreshold) {
+            this.$visitors.html('SOLD OUT');
+          }
+          else {
+            this.$time.html(UxU.utils.durationFromVisitors(this.visitors));
+            this.$visitors.html(this.visitors);
+          }
           $('#uxu-infographics-price').html(this.price);
-          this.$time.html(UxU.utils.durationFromVisitors(this.visitors));
           this.$knowImg.css('-webkit-transform', 'rotate('+ v + 'deg)');
         }
     },
