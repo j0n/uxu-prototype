@@ -178,18 +178,23 @@ article {
   h3 {
     font-size: 1.3em;
     float: left;
-    max-width: 50%;
+    max-width: 56%;
+  }
+  #uxu-ticket-status-festival-length, u {
+    color: $highlight_color;
+    text-decoration: none;
+     white-space: nowrap;
   }
 }
 .uxu-ticket-button {
   @include button();
-  padding: 0.6em 1.5em;
-  float: left;
+  padding: 0.6em 3em;
+  float: right;
   span {
-    padding: 0.2em  0 0 3em;
+    text-align: center;
+    padding: 0.2em  0 0 0;
     display: block;
     font-size: 0.8em;
-    text-transform: lowercase;
   }
 }
 .uxu-next-step{
@@ -428,7 +433,7 @@ article {
 }
 @media all and (max-width: 999px) {
   .uxu-ticket-status h3 {
-    max-width: 30%;
+    max-width: 50%;
   }
   .uxu-date{
     width: 20%;
@@ -472,7 +477,6 @@ article {
     max-width: 100%;
     width: 100%;
     text-align: center;
-    display: none;
   }
   .uxu-ticket-button {
     text-align: center;

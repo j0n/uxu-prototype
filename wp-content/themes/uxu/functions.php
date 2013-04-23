@@ -15,7 +15,6 @@ function uxu_scripts() {
     array( 'jquery' )
   );
 }
-
 add_action( 'wp_enqueue_scripts', 'uxu_scripts' );
 
 add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
@@ -108,3 +107,7 @@ function tml_new_user_registered( $user_id ) {
   wp_set_auth_cookie( $user_id );
 }
 add_action( 'tml_new_user_registered', 'tml_new_user_registered' );
+
+
+
+

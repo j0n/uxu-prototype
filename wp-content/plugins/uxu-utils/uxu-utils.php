@@ -53,3 +53,21 @@ function create_post_type() {
     )
   );
 }
+
+function uxu_utils_scripts() {
+  $js_url = plugins_url( 'uxu-utils/js/', __DIR__);
+  wp_enqueue_script( 'moment.js', $js_url . 'moment.min.js');
+  wp_enqueue_script( 'uxu.utils.js', $js_url . 'uxu.utils.js');
+}
+add_action( 'wp_enqueue_scripts', 'uxu_utils_scripts' );
+
+function uxu_tickets_info(){
+  $values = array(
+    'current_ticket_url' => 'julius',
+    'current_ticket_price' => '586',
+    'current_ticket_left' => 30,
+    'next_ticket_price' => '250',
+    'tickets_sold' => 3000
+  );
+  return $values;
+}

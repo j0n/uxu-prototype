@@ -10,15 +10,6 @@ Version: 0.0.1
 Author: Jon
 */
 
-function uxu_tickets_info(){
-  $values = array(
-    'current_ticket_url' => 'julius',
-    'current_ticket_price' => '240',
-    'current_ticket_left' => 30,
-    'next_ticket_price' => '250',
-  );
-  return $values;
-}
 
 class UxU_Tickets_Widget extends WP_Widget {
 
@@ -43,6 +34,10 @@ class UxU_Tickets_Widget extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 		extract( $args );
+    $js_url = plugins_url( 'uxu-tickets/js/', __DIR__);
+    wp_enqueue_script( 'uxu.ticket.js', $js_url . 'uxu-tickets.js', array('jquery'));
+    $data = uxu_tickets_info();
+    wp_localize_script('uxu.ticket.js', 'info', $data);
 		echo $before_widget;
     $values = uxu_tickets_info();
     include_once dirname( __FILE__ ) . '/view.php';
@@ -78,3 +73,7 @@ class UxU_Tickets_Widget extends WP_Widget {
 
 // register Foo_Widget widget
 add_action( 'widgets_init', create_function( '', 'register_widget( "uxu_tickets_widget" );' ) );
+
+
+
+

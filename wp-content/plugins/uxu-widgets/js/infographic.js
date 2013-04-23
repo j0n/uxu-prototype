@@ -4,11 +4,15 @@
     this.pos = 0;
     this.lap = 0;
     this.maxThreshold = 24000;
+    this.movingForward = true;
     this.v = 0;
     this.changed = false;
     this.checkValue = 0;
-    this.goal = 260;
+    this.goalVisitor = info.tickets_sold * 1;
+    this.visitors = 0;
     this.goalLap = 0;
+    this.$rightNow = null;
+    this.$knob = null;
     this.$visitors =  null;
     this.$time =  null;
     this.$knowImg = null;
@@ -60,7 +64,9 @@
     init: function(){
       var self = this;
       // check current value 
-       $('.knob').knob({
+      
+      this.$knob = $('.knob');
+      this.$knob.knob({
          max: 360,
          min: 0,
          stopper: false,
@@ -69,6 +75,7 @@
          width: 180,
          height: 180,
          change: function(v) {
+           // make timeout
            if (self.v > 340 && this.cv < 20) {
              self.lap++;
            }
@@ -92,6 +99,7 @@
          }
        });
        this.$visitors =  $('.uxu-infographics-vistors');
+       this.$rightNow =  $('#uxu-rightnow');
        this.$time =  $('.uxu-infographics-time');
        this.$stage =  $('.uxu-infographics-stage');
        this.$knowImg =  $('#knob-img');
@@ -102,38 +110,72 @@
          self.showMorePeople();
        }, 800);
     },
-    update: function(v) {
-        v = (this.lap * 360) + v;
-        this.visitors = Math.floor(v*13.5);
-
-      if (this.lap > -1) {
-        if (this.visitors > this.maxThreshold) {
-          this.$visitors.html('SOLD OUT').css({
-            'font-size': '4em'
-          });
+    update: function(v, end) {
+       v = (this.lap * 360) + v;
+       this.visitors = Math.floor(v*13.5);
+       if (this.visitors <= this.goalVisitor && !this.movingForward) {
+         this.visitors = this.goalVisitor;
+         if (!this.bottom) {
+           this.$rightNow.show();
+           this.bottom = true;
+           this.$knob.trigger( 'configure', {"fgColor":"#68b481"});
+         }
+         this.$visitors.html(this.visitors);
+       }
+       else {
+         if (this.visitors > this.goalVisitor && this.movingForward) {
+           this.visitors = this.goalVisitor;
+         }
+         if (this.bottom) {
+           this.$rightNow.hide();
+           this.$knob.trigger( 'configure', { "fgColor":"#000000" });
+           this.bottom = false;
+         }
+          if (this.visitors > this.maxThreshold) {
+            this.$visitors.html('SOLD OUT');
+          }
+          else {
+            this.$visitors.html(this.visitors);
+          }
+          if (this.visitors > 15015) {
+            this.price = 1450;
+          }
+          else if(this.visitors > 0 && this.visitors < 150) {
+            this.price = this.visitors;
+          }
+          else if(this.visitors > 150 && this.visitors < 160) {
+            this.price = 295;
+          }
+          else if(this.visitors > 171 && this.visitors < 181) {
+            this.price = 345;
+          }
+          else if(this.visitors > 181 && this.visitors < 196) {
+            this.price = 395;
+          }
+          else if (this.visitors < 1500) {
+            this.price = (Math.floor(this.visitors/50) * 4) + 466;
+          }
+          else {
+            this.price = (Math.floor(this.visitors/100) * 4) + 466;
+          }
+          $('#uxu-infographics-price').html(this.price);
+          this.$time.html(UxU.utils.durationFromVisitors(this.visitors));
+          this.$knowImg.css('-webkit-transform', 'rotate('+ v + 'deg)');
         }
-        else {
-          this.$visitors.html(this.visitors).css({
-            'font-size': (1 + (v/550)) + 'em'
-          });
-          var sec = (v*10)*24;
-          var duration = moment.duration(sec, 'seconds');
-          var seconds = v%60;
-          this.$time.html(1+duration._data.days + ' day ' + duration._data.hours + ' hours ' + duration._data.minutes + ' minutes ' + seconds + ' seconds');
-        }
-      }
-      this.$knowImg.css('-webkit-transform', 'rotate('+ v + 'deg)');
-
     },
     moveFoward: function() {
       var self = this;
-      if (this.pos < this.goal) {
+      if (this.visitors < this.goalVisitor) {
         this.pos+= 3;
         this.update(this.pos);
         $('.knob').val(this.pos).trigger('change');
         setTimeout(function(){
           self.moveFoward();
         }, 20);
+      }
+      else {
+        this.update(this.pos, true);
+        this.movingForward = false;
       }
     },
     showMoreU: function(){

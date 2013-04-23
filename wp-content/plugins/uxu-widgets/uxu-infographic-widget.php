@@ -24,9 +24,8 @@ class UxU_Infographic_Widget extends WP_Widget {
 		extract( $args );
     $js_url = plugins_url( 'uxu-widgets/js/', __DIR__);
     $img_path = plugins_url( 'uxu-widgets/img/', __DIR__);
-    $data = array(
-      'imgPath' => $img_path
-    );
+    $data = uxu_tickets_info();
+    $data['imgPath'] = $img_path;
     wp_register_style( 'infographic-style', plugins_url('css/style.css', __FILE__) );
     wp_enqueue_style( 'infographic-style' );
     wp_enqueue_script( 'jquery');

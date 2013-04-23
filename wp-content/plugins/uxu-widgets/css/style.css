@@ -26,16 +26,22 @@
   top: 18px;
   left: 18px;
 }
-.uxu-infographics-time-holder {
+.uxu-infographics-visitors-holder {
   text-align: right;
   padding-top: 3em;
   padding-right: 2%;
   float: left;
   width: 40%;
 }
-.uxu-infographics-vistors-holder {
+.uxu-infographics-time-holder {
   padding-top: 3em;
   float: left;
+}
+#uxu-rightnow {
+  color: #68b481;
+}
+.uxu-infographics-vistors {
+  font-size: 2em;
 }
 .uxu-infographics-tickets {
   color: #FFF;
@@ -94,19 +100,22 @@
   left: 50%;
 }
 @media all and (max-width: 949px) {
-  .uxu-infographics-vistors-holder{
+  .uxu-infographics-time-holder{
     width: 30%;
   }
-  .uxu-infographics-time-holder, .uxu-infographics-vistors-holder {
+  .uxu-infographics-time-holder, .uxu-infographics-visitors-holder {
     font-size: 0.7em;
   }
 }
 @media all and (max-width: 749px) {
-  div.uxu-infographics-time-holder, div.uxu-infographics-vistors-holder {
+  div.uxu-infographics-time-holder, div.uxu-infographics-visitors-holder {
     width: 40%;
     padding: 0.5em 5% 200px;
     height: 155px;
     font-size: 0.7em;
+  }
+  div.uxu-infographics-time-holder span, div.uxu-infographics-visitors-holder span {
+    font-size: 1.2em;
   }
   .uxu-infographic-knob {
     position: absolute;
