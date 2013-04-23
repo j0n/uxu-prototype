@@ -377,6 +377,7 @@ article {
 /*blogg */
 #container {
   @include main();
+  float: left;
   margin-top: 2em;
   padding-top: 3em;
 }
