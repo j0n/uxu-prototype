@@ -22,6 +22,7 @@
           <img src="<?php echo get_template_directory_uri();  ?>/images/logo.jpg" alt="logo" />
         </a>
         <a class="uxu-mobile-menu" href="#"><?php _e('Menu'); ?></a>
+        <div class="uxu-sticky-tmp-dev"></div>
         <div class="uxu-sticky-top">
           <div class="uxu-sticky-wrapper">
             <nav class="header-menu">

@@ -3,6 +3,7 @@
   border: solid 1px #000;
   margin: 10px 0;
   overflow:hidden;
+  width: 100%;
 }
 .uxu-infographic span{
   font-size: 1.4em;

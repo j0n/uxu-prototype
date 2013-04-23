@@ -35,12 +35,16 @@
   var timeout = -1;
   var $sticky = null;
   var logoY = 0;
+  var isSticky = false;
 
   $(document).ready(function(){
-    if (window.screen.height > 700) {
+    $('.logo img').on('load', function(){
       logoY = $('.logo').outerHeight(true);
+      console.log(logoY);
+    });
+    if (window.screen.height > 700) {
+      logoY = $('.logo').outerHeight(true) - 4;
       $sticky = $('.uxu-sticky-top');
-
       $(window).on('scroll', function(){
         if (!isScrolling) {
           isScrolling = true;
@@ -49,22 +53,28 @@
         clearTimeout(timeout);
         timeout = setTimeout(function(){
           isScrolling = false;
-        }, 250);
+        }, 100);
       });
     }
   })
   function scrollCheck(){
     var scrollY = $(window).scrollTop();
-    if (scrollY > logoY) {
+    if (scrollY > logoY){
       $sticky.addClass('uxu-is-sticky');
+      $('.uxu-sticky-tmp-dev').css({
+        height: $sticky.outerHeight()
+      });
     }
-    else {
+    else{
+      $('.uxu-sticky-tmp-dev').css({
+        height: 0
+      });
       $sticky.removeClass('uxu-is-sticky');
     }
     if (isScrolling) {
       setTimeout(function(){
         scrollCheck();
-      }, 200);
+      }, 50);
     }
   }
 })(jQuery);

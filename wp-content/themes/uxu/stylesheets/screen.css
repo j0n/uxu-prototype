@@ -712,29 +712,30 @@ article {
   top: 0;
   width: 100%;
   background: #FFF;
+  z-index: 1001;
 }
-/* line 466, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .uxu-is-sticky .uxu-sticky-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 471, ../sass/screen.scss */
+/* line 472, ../sass/screen.scss */
 .footer {
   margin-top: 4em;
   margin-bottom: 1em;
   overflow: hidden;
 }
-/* line 475, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .footer .menu {
   text-transform: uppercase;
 }
-/* line 478, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 .footer li {
   display: inline-block;
   border-right: solid 1px #000;
 }
-/* line 481, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .footer li a {
   display: block;
   padding: 0.2em 0.3em 0 0;
@@ -742,13 +743,13 @@ article {
 
 @media all and (max-width: 1199px) {
   /* if screen same as page, add margin */
-  /* line 490, ../sass/screen.scss */
+  /* line 491, ../sass/screen.scss */
   .page #primary {
     width: 90%;
     padding: 1.5em 5%;
     border: solid 1px #000;
   }
-  /* line 492, ../sass/screen.scss */
+  /* line 493, ../sass/screen.scss */
   .page #primary .main {
     width: 100%;
     padding: 0;
@@ -756,30 +757,30 @@ article {
   }
 }
 @media all and (max-width: 999px) {
-  /* line 500, ../sass/screen.scss */
+  /* line 501, ../sass/screen.scss */
   .uxu-ticket-status h3 {
     max-width: 50%;
   }
 
-  /* line 503, ../sass/screen.scss */
+  /* line 504, ../sass/screen.scss */
   .uxu-date {
     width: 20%;
   }
 
-  /* line 506, ../sass/screen.scss */
+  /* line 507, ../sass/screen.scss */
   .inner-content {
     width: 70%;
   }
 }
 @media all and (max-width: 749px) {
-  /* line 512, ../sass/screen.scss */
+  /* line 513, ../sass/screen.scss */
   .logo {
     width: 60%;
     margin: 1em 2%;
     float: left;
   }
 
-  /* line 517, ../sass/screen.scss */
+  /* line 518, ../sass/screen.scss */
   .uxu-mobile-menu {
     float: right;
     margin-right: 2%;
@@ -789,39 +790,39 @@ article {
     display: block;
   }
 
-  /* line 525, ../sass/screen.scss */
+  /* line 526, ../sass/screen.scss */
   .usermenu {
     width: 100%;
   }
-  /* line 527, ../sass/screen.scss */
+  /* line 528, ../sass/screen.scss */
   .usermenu ul {
     position: static;
   }
 
-  /* line 531, ../sass/screen.scss */
+  /* line 532, ../sass/screen.scss */
   .header-menu {
     display: none;
   }
 
-  /* line 534, ../sass/screen.scss */
+  /* line 535, ../sass/screen.scss */
   .header-menu li, .usermenu ul li {
     width: 100%;
     padding: 0.5em 0;
   }
 
-  /* line 538, ../sass/screen.scss */
+  /* line 539, ../sass/screen.scss */
   .uxu-ticket-status {
     padding: 1em 5% 0.5em;
   }
 
-  /* line 541, ../sass/screen.scss */
+  /* line 542, ../sass/screen.scss */
   .uxu-ticket-status h3 {
     max-width: 100%;
     width: 100%;
     text-align: center;
   }
 
-  /* line 546, ../sass/screen.scss */
+  /* line 547, ../sass/screen.scss */
   .uxu-ticket-button {
     text-align: center;
     width: 96%;
@@ -830,53 +831,53 @@ article {
     margin-bottom: 1em;
   }
 
-  /* line 553, ../sass/screen.scss */
+  /* line 554, ../sass/screen.scss */
   .uxu-ticket-button span {
     padding-left: 0;
   }
 
-  /* line 556, ../sass/screen.scss */
+  /* line 557, ../sass/screen.scss */
   .uxu-next-step {
     width: 100%;
     padding-right: 0;
     text-align: center;
   }
-  /* line 560, ../sass/screen.scss */
+  /* line 561, ../sass/screen.scss */
   .uxu-next-step p {
     display: inline;
     padding-left: 1%;
   }
 
-  /* line 565, ../sass/screen.scss */
+  /* line 566, ../sass/screen.scss */
   .products h2 {
     width: 45%;
     text-align: left;
     line-height: 1.1em;
   }
 
-  /* line 570, ../sass/screen.scss */
+  /* line 571, ../sass/screen.scss */
   .uxu-share-pass-info-btn {
     padding: 0.5em 1em;
   }
 
-  /* line 574, ../sass/screen.scss */
+  /* line 575, ../sass/screen.scss */
   .uxu-date {
     width: 25%;
     padding: 1em 0;
   }
 
-  /* line 578, ../sass/screen.scss */
+  /* line 579, ../sass/screen.scss */
   .inner-content {
     width: 73%;
   }
 
-  /* line 581, ../sass/screen.scss */
+  /* line 582, ../sass/screen.scss */
   .uxu-login-register-box {
     width: 96%;
     margin: 1em 1%;
   }
 
-  /* line 585, ../sass/screen.scss */
+  /* line 586, ../sass/screen.scss */
   .uxu-tml-text {
     width: 90%;
     margin: 1em 5%;
