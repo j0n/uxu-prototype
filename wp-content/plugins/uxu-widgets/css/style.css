@@ -130,6 +130,7 @@
   }
   div.uxu-infographics-time-holder span, div.uxu-infographics-visitors-holder span {
     font-size: 1.4em;
+    white-space: nowrap;
   }
   .uxu-infographic-knob {
     position: absolute;

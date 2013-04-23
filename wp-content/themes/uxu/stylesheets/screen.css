@@ -326,7 +326,7 @@ article {
   max-width: 56%;
 }
 /* line 195, ../sass/screen.scss */
-.uxu-ticket-status #uxu-ticket-status-festival-length {
+.uxu-ticket-status #uxu-ticket-status-festival-length, .uxu-ticket-status u {
   color: #ff8369;
   text-decoration: none;
 }
