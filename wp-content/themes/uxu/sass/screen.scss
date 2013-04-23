@@ -524,6 +524,9 @@ article {
 }
 
 @media all and (max-width: 749px) {
+  h1 {
+    margin-top: 0.2em;
+  }
   .logo {
     width: 60%;
     margin: 1em 2%;
