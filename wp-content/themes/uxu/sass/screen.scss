@@ -2,6 +2,8 @@
 @import "compass/css3";
 
 $highlight_color :  #68b481;
+$mark_color: #ff8369;
+
 @mixin main {
   width: 90%;
   padding: 1.5em 5%;
@@ -175,13 +177,14 @@ article {
   @include main();
   border: solid 1px #000;
   overflow: hidden;
+  float: left;
   h3 {
     font-size: 1.3em;
     float: left;
     max-width: 56%;
   }
   #uxu-ticket-status-festival-length, u {
-    color: $highlight_color;
+    color: $mark_color;
     text-decoration: none;
      white-space: nowrap;
   }
@@ -194,7 +197,8 @@ article {
     text-align: center;
     padding: 0.2em  0 0 0;
     display: block;
-    font-size: 0.8em;
+    line-height: 0.6em;
+    font-size: 1.2em;
   }
 }
 .uxu-next-step{
@@ -256,8 +260,39 @@ article {
     color: #FFF;
   }
 }
-.uxu-login-box {
+.uxu-tml-text {
   float: left;
+  width: 46%;
+  padding: 1%;
+  margin-right: 2%;
+}
+.uxu-facebook-button {
+  float: left;
+  display: block;
+  width: 90%;
+  margin: 1em 0;
+  padding: 1em 5%;
+  text-align: center;
+}
+.uxu-login-box {
+  float: right;
+  #wp-submit {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+  #rememberme{
+    float: left;
+    width: auto;
+  }
+  .tml-action-links{
+    margin: 1em 0;
+    float: left;
+    width: 100%;
+  }
+  .tml-action-links li {
+    width: 50%;
+    float: left;
+  }
 }
 /* my page start */
 .uxu-user-page {
@@ -388,6 +423,25 @@ article {
     color: $highlight_color;
   }
 }
+.uxu-listning-item {
+  overflow: hidden;
+  width: 100%;
+  margin: 2em 0;
+}
+.uxu-listning-image {
+  float: left;
+  width: 20%;
+}
+.uxu-listning-content {
+  float: left;
+  width: 78%;
+  margin-left: 2%;
+  h2 {
+    text-align: left;
+    margin-bottom: 0.3em;
+  }
+}
+
 .uxu-comments {
   overflow: hidden;
   margin: 2em 0;
@@ -401,6 +455,17 @@ article {
   padding-top: 0;
   h1 {
     margin-top: 0.5em;
+  }
+}
+.uxu-is-sticky{
+  position: fixed;
+  left: 0;
+  top:0;
+  width: 100%;
+  background: #FFF;
+  .uxu-sticky-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 .footer {
@@ -483,6 +548,7 @@ article {
     width: 96%;
     padding-left: 2%;
     padding-right: 2%;
+    margin-bottom: 1em;
   }
   .uxu-ticket-button span {
     padding-left: 0;
@@ -516,4 +582,10 @@ article {
     width: 96%;
     margin: 1em 1%;
   }
+  .uxu-tml-text {
+    width: 90%;
+    margin: 1em 5%;
+    padding: 0;
+  }
+
 }

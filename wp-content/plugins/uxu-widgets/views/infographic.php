@@ -1,13 +1,14 @@
 <div class="uxu-infographic">
   <h2>
-    <?php _e('Vrid upp volymen och se hur festivalen blir större ju fler vi blir'); ?>
+    Var med och skapa en ny musikfestival
+    <span style="font-size: 0.5em; color: #000; display:block; max-width: 80%; margin: 0.5em auto 0;">
+      <?php _e('Vrid upp volymen och se hur festivalen blir större ju fler vi blir'); ?>
+    </span>
   </h2>
   
   <div class="uxu-infographics-visitors-holder">
     <h3><span id="uxu-rightnow">Just Nu</span></h3>
-    <h3>
     <span class="uxu-infographics-vistors"> </span>
-    </h3>
     <span><?php _e('Antal besökare', 'uxu'); ?></span>
   </div>
   <div class="uxu-infographic-knob">

@@ -25,7 +25,7 @@
             </div>
             <div class="uxu-curators-list">
               <?php query_posts( 'post_type=curators' ) ?>
-              <?php get_template_part( 'loop', 'artists'); ?>
+              <?php get_template_part( 'loop', 'listning'); ?>
               <?php wp_reset_query(); ?>
             </div>
         </div><!-- #primary -->

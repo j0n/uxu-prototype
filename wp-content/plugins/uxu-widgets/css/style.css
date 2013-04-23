@@ -4,6 +4,10 @@
   margin: 10px 0;
   overflow:hidden;
 }
+.uxu-infographic span{
+  font-size: 1.4em;
+  color: #ff8369;
+}
 .uxu-infographic h2{
   font-size: 2.2em;
   margin: 1em 0;
@@ -33,12 +37,20 @@
   float: left;
   width: 40%;
 }
+.uxu-infographics-visitors-holder span{
+  color: #000;
+}
+.uxu-infographics-visitors-holder span.uxu-infographics-vistors {
+  display: block;
+  font-size: 3em;
+  color: #ff8369;
+}
 .uxu-infographics-time-holder {
   padding-top: 3em;
   float: left;
 }
 #uxu-rightnow {
-  color: #68b481;
+  color: #ff8369;
 }
 .uxu-infographics-vistors {
   font-size: 2em;
@@ -115,7 +127,7 @@
     font-size: 0.7em;
   }
   div.uxu-infographics-time-holder span, div.uxu-infographics-visitors-holder span {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .uxu-infographic-knob {
     position: absolute;

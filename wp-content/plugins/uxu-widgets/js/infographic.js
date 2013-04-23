@@ -118,7 +118,7 @@
          if (!this.bottom) {
            this.$rightNow.show();
            this.bottom = true;
-           this.$knob.trigger( 'configure', {"fgColor":"#68b481"});
+           this.$knob.trigger( 'configure', {"fgColor":"#ff8369"});
          }
          this.$visitors.html(this.visitors);
        }
@@ -176,6 +176,7 @@
       else {
         this.update(this.pos, true);
         this.movingForward = false;
+        this.bottom = true;
       }
     },
     showMoreU: function(){

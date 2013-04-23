@@ -71,22 +71,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   /* Legacy iOS */
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 body {
   font-family: BryantPro, Helvetica, Arial, san-serif;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 p {
   font-size: 1.2em;
   line-height: 1.4em;
 }
-/* line 35, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 p a {
   color: #68b481;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -99,84 +99,84 @@ p a {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-/* line 17, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .button:hover {
   color: #000;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .main {
   width: 90%;
   padding: 1.5em 5%;
   border: solid 1px #000;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 a:hover {
   color: #68b481;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 h1 {
   font-size: 3.6em;
   text-align: center;
   margin: 1em 0 0.2em;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 h2 {
   font-size: 2.4em;
   text-align: center;
   margin-bottom: 0.8em;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 h3 {
   font-size: 1.6em;
   margin-bottom: 0.5em;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 img, iframe, embedd {
   max-width: 100%;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 img {
   height: auto;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 article {
   margin-bottom: 1em;
   overflow: hidden;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 #primary {
   clear: both;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .home h3 {
   margin: 0.5em 0 0.3em;
   font-size: 2.4em;
 }
-/* line 84, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .home article {
   margin-bottom: 2em;
 }
-/* line 87, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .home .widget_pageexcerptwidget {
   text-align: center;
 }
-/* line 90, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .home .widget_pageexcerptwidget p {
   text-align: left;
   margin-top: 1em;
@@ -187,13 +187,13 @@ article {
   columns: 20em 2;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .page-image-holder {
   text-align: center;
   margin-bottom: 1em;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .page .entry-content {
   -webkit-columns: 20em 2;
   -moz-columns: 20em 2;
@@ -202,26 +202,26 @@ article {
   columns: 20em 2;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .logo {
   margin: 2em 0;
   display: block;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .banner {
   width: 100%;
   height: 2em;
   background: #000;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .circle {
   color: #FFF;
   font-size: 2em;
@@ -236,29 +236,29 @@ article {
   border-radius: 50%;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .uxu-mobile-menu {
   text-transform: uppercase;
   font-size: 2em;
   display: none;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .header-menu {
   width: 100%;
   float: left;
   border: solid 1px #000;
   text-transform: uppercase;
 }
-/* line 135, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .header-menu .current_page_item {
   background: #000;
 }
-/* line 137, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .header-menu .current_page_item a {
   color: #FFF;
 }
-/* line 141, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .header-menu li {
   width: 12.5%;
   text-align: center;
@@ -266,30 +266,30 @@ article {
   border-left: solid 1px #000;
   border-right: solid 1px #000;
 }
-/* line 148, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .header-menu a {
   display: block;
   width: 100%;
   padding: 0.5em 0;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .usermenu {
   float: left;
   width: 12.5%;
   padding: 0;
   position: relative;
 }
-/* line 159, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .usermenu ul {
   position: absolute;
   width: 100%;
 }
-/* line 163, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .usermenu li:first-child {
   display: block;
 }
-/* line 166, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .usermenu li {
   display: none;
   background: #FFF;
@@ -298,28 +298,29 @@ article {
   padding-right: 3%;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .uxu-ticket-status {
   width: 90%;
   padding: 1.5em 5%;
   border: solid 1px #000;
   border: solid 1px #000;
   overflow: hidden;
+  float: left;
 }
-/* line 178, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .uxu-ticket-status h3 {
   font-size: 1.3em;
   float: left;
   max-width: 56%;
 }
-/* line 183, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .uxu-ticket-status #uxu-ticket-status-festival-length, .uxu-ticket-status u {
-  color: #68b481;
+  color: #ff8369;
   text-decoration: none;
   white-space: nowrap;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .uxu-ticket-button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -334,31 +335,32 @@ article {
   padding: 0.6em 3em;
   float: right;
 }
-/* line 17, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .uxu-ticket-button:hover {
   color: #000;
 }
-/* line 193, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .uxu-ticket-button span {
   text-align: center;
   padding: 0.2em 0 0 0;
   display: block;
-  font-size: 0.8em;
+  line-height: 0.6em;
+  font-size: 1.2em;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .uxu-next-step {
   float: left;
   padding: 0.5em 0;
   margin: 0 2%;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .uxu-frontpage-first iframe {
   width: 100%;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .uxu-frontpage-fourth, .uxu-frontpage-third {
   width: 90%;
   padding: 1.5em 5%;
@@ -368,18 +370,18 @@ article {
   margin: 1em 0;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .home .widget_uxu_video_widget {
   width: 80%;
   margin: 2em 10%;
   text-align: center;
 }
-/* line 221, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .home .widget_uxu_video_widget h2 {
   margin-bottom: 0.5em;
 }
 
-/* line 225, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .message {
   background: #68b481;
   width: 96%;
@@ -387,7 +389,7 @@ article {
   margin: 1em 0;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .error {
   width: 96%;
   padding: 1em 2%;
@@ -395,7 +397,7 @@ article {
   background: #FF7373;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .uxu-login-register-box {
   float: right;
   border: solid 1px #000;
@@ -403,18 +405,18 @@ article {
   padding: 1em 1%;
   margin: 0;
 }
-/* line 243, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .uxu-login-register-box label {
   display: block;
 }
-/* line 246, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .uxu-login-register-box input {
   width: 98%;
   border: solid 1px #DDD;
   font-size: 1.2em;
   padding: 0.5em 1%;
 }
-/* line 252, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .uxu-login-register-box .submit input {
   cursor: pointer;
   border: none;
@@ -422,13 +424,52 @@ article {
   color: #FFF;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
+.uxu-tml-text {
+  float: left;
+  width: 46%;
+  padding: 1%;
+  margin-right: 2%;
+}
+
+/* line 269, ../sass/screen.scss */
+.uxu-facebook-button {
+  float: left;
+  display: block;
+  width: 90%;
+  margin: 1em 0;
+  padding: 1em 5%;
+  text-align: center;
+}
+
+/* line 277, ../sass/screen.scss */
 .uxu-login-box {
+  float: right;
+}
+/* line 279, ../sass/screen.scss */
+.uxu-login-box #wp-submit {
+  width: 100%;
+  padding: 0.5em 0;
+}
+/* line 283, ../sass/screen.scss */
+.uxu-login-box #rememberme {
+  float: left;
+  width: auto;
+}
+/* line 287, ../sass/screen.scss */
+.uxu-login-box .tml-action-links {
+  margin: 1em 0;
+  float: left;
+  width: 100%;
+}
+/* line 292, ../sass/screen.scss */
+.uxu-login-box .tml-action-links li {
+  width: 50%;
   float: left;
 }
 
 /* my page start */
-/* line 263, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .uxu-user-page {
   width: 90%;
   padding: 1.5em 5%;
@@ -438,30 +479,30 @@ article {
   margin-top: 2em;
 }
 
-/* line 269, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .uxu-user-festival-pass {
   border-bottom: solid 1px #000;
   padding-bottom: 2em;
   margin-bottom: 2em;
 }
 
-/* line 275, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .uxu-user-festival-pass-info h2, .uxu-user-festival-pass-info h3, .uxu-user-festival-pass-info a {
   text-align: left;
 }
-/* line 278, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .uxu-user-festival-pass-info h3, .uxu-user-festival-pass-info a {
   font-size: 1.5em;
 }
 
-/* line 282, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .uxu-share-pass-info {
   text-align: center;
   padding: 3em 0 2em 0;
   width: 100%;
 }
 
-/* line 287, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .uxu-share-pass-info-btn {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -477,27 +518,27 @@ article {
   font-size: 1.6em;
   padding: 0.5em 2em;
 }
-/* line 17, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .uxu-share-pass-info-btn:hover {
   color: #000;
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .uxu-user-other-products {
   overflow: hidden;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .products {
   width: 100%;
   float: left;
 }
-/* line 299, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 .products img, .products a {
   float: left;
   line-height: 50px;
 }
-/* line 303, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .products h2 {
   float: left;
   padding-top: 0.2em;
@@ -505,12 +546,12 @@ article {
   font-size: 1.6em;
   margin-bottom: 0;
 }
-/* line 310, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 .products img {
   margin-right: 2%;
 }
 
-/* line 314, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 .uxu-user-below {
   width: 90%;
   padding: 1.5em 5%;
@@ -521,12 +562,12 @@ article {
 }
 
 /* end user page */
-/* line 321, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .buy-product-button {
   padding: 0em 1.5em;
 }
 
-/* line 324, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 .uxu-product-list {
   width: 90%;
   padding: 1.5em 5%;
@@ -538,7 +579,7 @@ article {
 }
 
 /*blogg */
-/* line 332, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 #container {
   width: 90%;
   padding: 1.5em 5%;
@@ -547,21 +588,21 @@ article {
   padding-top: 3em;
 }
 
-/* line 337, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .sticky {
   position: relative;
 }
-/* line 339, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .sticky .uxu-date {
   display: none;
 }
-/* line 342, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 .sticky .inner-content {
   width: 100%;
   padding: 0;
   margin: 0;
 }
-/* line 347, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 .sticky .inner-text-content {
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -571,12 +612,12 @@ article {
   padding: 1em 5%;
   width: 90%;
 }
-/* line 356, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .sticky a {
   color: #000;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 .uxu-date {
   width: 14%;
   float: left;
@@ -585,48 +626,73 @@ article {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 367, ../sass/screen.scss */
+/* line 402, ../sass/screen.scss */
 .uxu-date span {
   display: block;
   width: 100%;
   font-size: 1.2em;
 }
-/* line 372, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 .uxu-date .uxu-date-date {
   font-size: 3em;
 }
 
-/* line 376, ../sass/screen.scss */
+/* line 411, ../sass/screen.scss */
 .inner-content {
   width: 80%;
   float: right;
   padding: 0 0 2em;
   margin-bottom: 2em;
 }
-/* line 381, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .inner-content h2.content-header {
   margin: 0.5em 0;
   text-align: left;
 }
-/* line 385, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .inner-content a.post-read-more {
   display: block;
   margin: 1em 0;
   color: #68b481;
 }
 
-/* line 391, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
+.uxu-listning-item {
+  overflow: hidden;
+  width: 100%;
+  margin: 2em 0;
+}
+
+/* line 431, ../sass/screen.scss */
+.uxu-listning-image {
+  float: left;
+  width: 20%;
+}
+
+/* line 435, ../sass/screen.scss */
+.uxu-listning-content {
+  float: left;
+  width: 78%;
+  margin-left: 2%;
+}
+/* line 439, ../sass/screen.scss */
+.uxu-listning-content h2 {
+  text-align: left;
+  margin-bottom: 0.3em;
+}
+
+/* line 445, ../sass/screen.scss */
 .uxu-comments {
   overflow: hidden;
   margin: 2em 0;
 }
 
-/* line 395, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 .single .post {
   margin-top: 1em;
 }
 
-/* line 398, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .single .artists {
   width: 90%;
   padding: 1.5em 5%;
@@ -634,27 +700,41 @@ article {
   margin-top: 1em;
   padding-top: 0;
 }
-/* line 402, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .single .artists h1 {
   margin-top: 0.5em;
 }
 
-/* line 406, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
+.uxu-is-sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #FFF;
+}
+/* line 466, ../sass/screen.scss */
+.uxu-is-sticky .uxu-sticky-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 471, ../sass/screen.scss */
 .footer {
   margin-top: 4em;
   margin-bottom: 1em;
   overflow: hidden;
 }
-/* line 410, ../sass/screen.scss */
+/* line 475, ../sass/screen.scss */
 .footer .menu {
   text-transform: uppercase;
 }
-/* line 413, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 .footer li {
   display: inline-block;
   border-right: solid 1px #000;
 }
-/* line 416, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 .footer li a {
   display: block;
   padding: 0.2em 0.3em 0 0;
@@ -662,13 +742,13 @@ article {
 
 @media all and (max-width: 1199px) {
   /* if screen same as page, add margin */
-  /* line 425, ../sass/screen.scss */
+  /* line 490, ../sass/screen.scss */
   .page #primary {
     width: 90%;
     padding: 1.5em 5%;
     border: solid 1px #000;
   }
-  /* line 427, ../sass/screen.scss */
+  /* line 492, ../sass/screen.scss */
   .page #primary .main {
     width: 100%;
     padding: 0;
@@ -676,30 +756,30 @@ article {
   }
 }
 @media all and (max-width: 999px) {
-  /* line 435, ../sass/screen.scss */
+  /* line 500, ../sass/screen.scss */
   .uxu-ticket-status h3 {
     max-width: 50%;
   }
 
-  /* line 438, ../sass/screen.scss */
+  /* line 503, ../sass/screen.scss */
   .uxu-date {
     width: 20%;
   }
 
-  /* line 441, ../sass/screen.scss */
+  /* line 506, ../sass/screen.scss */
   .inner-content {
     width: 70%;
   }
 }
 @media all and (max-width: 749px) {
-  /* line 447, ../sass/screen.scss */
+  /* line 512, ../sass/screen.scss */
   .logo {
     width: 60%;
     margin: 1em 2%;
     float: left;
   }
 
-  /* line 452, ../sass/screen.scss */
+  /* line 517, ../sass/screen.scss */
   .uxu-mobile-menu {
     float: right;
     margin-right: 2%;
@@ -709,89 +789,97 @@ article {
     display: block;
   }
 
-  /* line 460, ../sass/screen.scss */
+  /* line 525, ../sass/screen.scss */
   .usermenu {
     width: 100%;
   }
-  /* line 462, ../sass/screen.scss */
+  /* line 527, ../sass/screen.scss */
   .usermenu ul {
     position: static;
   }
 
-  /* line 466, ../sass/screen.scss */
+  /* line 531, ../sass/screen.scss */
   .header-menu {
     display: none;
   }
 
-  /* line 469, ../sass/screen.scss */
+  /* line 534, ../sass/screen.scss */
   .header-menu li, .usermenu ul li {
     width: 100%;
     padding: 0.5em 0;
   }
 
-  /* line 473, ../sass/screen.scss */
+  /* line 538, ../sass/screen.scss */
   .uxu-ticket-status {
     padding: 1em 5% 0.5em;
   }
 
-  /* line 476, ../sass/screen.scss */
+  /* line 541, ../sass/screen.scss */
   .uxu-ticket-status h3 {
     max-width: 100%;
     width: 100%;
     text-align: center;
   }
 
-  /* line 481, ../sass/screen.scss */
+  /* line 546, ../sass/screen.scss */
   .uxu-ticket-button {
     text-align: center;
     width: 96%;
     padding-left: 2%;
     padding-right: 2%;
+    margin-bottom: 1em;
   }
 
-  /* line 487, ../sass/screen.scss */
+  /* line 553, ../sass/screen.scss */
   .uxu-ticket-button span {
     padding-left: 0;
   }
 
-  /* line 490, ../sass/screen.scss */
+  /* line 556, ../sass/screen.scss */
   .uxu-next-step {
     width: 100%;
     padding-right: 0;
     text-align: center;
   }
-  /* line 494, ../sass/screen.scss */
+  /* line 560, ../sass/screen.scss */
   .uxu-next-step p {
     display: inline;
     padding-left: 1%;
   }
 
-  /* line 499, ../sass/screen.scss */
+  /* line 565, ../sass/screen.scss */
   .products h2 {
     width: 45%;
     text-align: left;
     line-height: 1.1em;
   }
 
-  /* line 504, ../sass/screen.scss */
+  /* line 570, ../sass/screen.scss */
   .uxu-share-pass-info-btn {
     padding: 0.5em 1em;
   }
 
-  /* line 508, ../sass/screen.scss */
+  /* line 574, ../sass/screen.scss */
   .uxu-date {
     width: 25%;
     padding: 1em 0;
   }
 
-  /* line 512, ../sass/screen.scss */
+  /* line 578, ../sass/screen.scss */
   .inner-content {
     width: 73%;
   }
 
-  /* line 515, ../sass/screen.scss */
+  /* line 581, ../sass/screen.scss */
   .uxu-login-register-box {
     width: 96%;
     margin: 1em 1%;
+  }
+
+  /* line 585, ../sass/screen.scss */
+  .uxu-tml-text {
+    width: 90%;
+    margin: 1em 5%;
+    padding: 0;
   }
 }
