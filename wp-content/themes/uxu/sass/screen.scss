@@ -308,6 +308,7 @@ article {
 /* my page start */
 .uxu-user-page {
   @include main();
+  float: left;
   padding: 2em 5%;
   border: solid 1px #000;
   margin-top: 2em;
