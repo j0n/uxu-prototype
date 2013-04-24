@@ -198,11 +198,11 @@
         }
       }
       var self = this;
-      if (this.checkValue != this.visitors) {
+      if (this.checkValue != this.visitors || this.checkValue == this.goalVisitor) {
         this.changed = false;
         setTimeout(function(){
           self.showMoreU();
-        }, 100);
+        }, 150);
       }
       this.checkValue = this.visitors;
     },
