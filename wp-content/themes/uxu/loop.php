@@ -17,6 +17,7 @@
         </span?
         ?>
     </div>
+
     <div class="inner-content">
       <?php if (has_post_thumbnail()) : ?>
         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -34,6 +35,9 @@
           </div>
         <?php else: ?>
           <?php the_excerpt(); ?>
+          Skriven av 
+          <?php the_author_link(); ?> 
+          <?php echo get_the_author_link(); ?>
           <a class="post-read-more" href="<?php the_permalink();?>"><?php _e('READ MORE'); ?></a>
         <?php endif; ?>
        </div>

@@ -1,7 +1,7 @@
 <div class="uxu-infographic">
   <h2>
     Var med och skapa en ny musikfestival
-    <span style="font-size: 0.5em; color: #000; display:block; max-width: 80%; margin: 0.5em auto 0;">
+    <span class="uxu-infographic-tagline">
       <?php _e('Vrid upp volymen och se hur festivalen blir större ju fler vi blir'); ?>
     </span>
   </h2>
