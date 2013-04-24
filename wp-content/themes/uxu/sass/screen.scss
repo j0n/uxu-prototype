@@ -132,6 +132,11 @@ article {
 .page-header{
   position: relative;
 }
+.uxu-facebook-like {
+  position: absolute;
+  left: 60%;
+  top: 0;
+}
 .header-menu{
   width: 100%;
   float: left;
@@ -473,7 +478,7 @@ article {
 .uxu-post-comment {
   float: left;
   width: 100%;
-  padding: 0 0 1em 0;
+  padding: 1em 0 0 0;
   div {
     padding: 1em 0;
   }
@@ -535,6 +540,9 @@ article {
   }
 }
 @media all and (max-width: 999px) {
+  .uxu-facebook-like {
+    display: none;
+  }
   .uxu-ticket-status h3 {
     max-width: 50%;
   }

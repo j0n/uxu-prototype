@@ -21,6 +21,9 @@
         <a class="logo" href="<?php echo esc_url(home_url('/')); ?>">
           <img src="<?php echo get_template_directory_uri();  ?>/images/logo.jpg" alt="logo" />
         </a>
+        <div class="uxu-facebook-like">
+          <div class="fb-like" data-href="https://www.facebook.com/festival2014" data-send="false" data-width="250" data-show-faces="true"></div>
+        </div>
         <a class="uxu-mobile-menu" href="#"><?php _e('Menu'); ?></a>
         <div class="uxu-sticky-tmp-dev"></div>
         <div class="uxu-sticky-top">
