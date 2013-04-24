@@ -34,12 +34,18 @@
             [Kommentarer]
           </div>
         <?php else: ?>
-          <?php the_excerpt(); ?>
-          <a class="post-read-more" href="<?php the_permalink();?>"><?php _e('READ MORE'); ?></a>
-          Skriven av 
-          <?php the_author_posts_link(); ?>
+          <?php the_excerpt('Read more', 50); ?>
         <?php endif; ?>
-       </div>
+        <div class="uxu-post-comment">
+          <span>
+          <?php comments_number( __('Inga kommentarer än'), __('en kommentar'), __('% kommentarer')); ?> 
+          </span>
+          <div>
+            Skriven av 
+            <?php the_author_posts_link(); ?>
+          </div>
+        </div>
+     </div>
     </div>
   </article>
 <?php endwhile; ?>

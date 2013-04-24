@@ -118,3 +118,8 @@ if (!current_user_can('manage_options')) {
 if (!current_user_can('edit_posts')) {
   add_filter('show_admin_bar', '__return_false');
 }
+
+function new_excerpt_more( $more ) {
+  return ' <a class="uxu-read-more" href="'. get_permalink() . '">Read More</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );

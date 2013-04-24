@@ -200,10 +200,21 @@ article {
      white-space: nowrap;
   }
 }
+.uxu-ticket-button-holder {
+  float: right;
+}
+.uxu-ticket-button-ordinary {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+
 .uxu-ticket-button {
   @include button();
   padding: 0.6em 3em;
   float: right;
+  margin-bottom: 0.5em;
   span {
     text-align: center;
     padding: 0.2em  0 0 0;
@@ -430,9 +441,9 @@ article {
     margin: 0.5em 0;
     text-align: left;
   }
-  a.post-read-more {
+  a.uxu-read-more {
     display: block;
-    margin: 1em 0;
+    margin: 0.5em 0 0;
     color: $highlight_color;
   }
 }
@@ -459,7 +470,17 @@ article {
   overflow: hidden;
   margin: 2em 0;
 }
+.uxu-post-comment {
+  float: left;
+  width: 100%;
+  padding: 0 0 1em 0;
+  div {
+    padding: 1em 0;
+  }
+}
 .single .post {
+  float: left;
+  width: 100%;
   margin-top: 1em;
 }
 .single .artists {
@@ -614,5 +635,7 @@ article {
     margin: 1em 5%;
     padding: 0;
   }
-
+  .uxu-ticket-button-holder {
+    width: 100%;
+  }
 }
