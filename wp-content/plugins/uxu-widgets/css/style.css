@@ -4,6 +4,7 @@
   margin: 10px 0;
   overflow:hidden;
   width: 100%;
+  float: left;
 }
 .uxu-infographic span{
   font-size: 1.4em;
