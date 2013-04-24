@@ -35,10 +35,9 @@
           </div>
         <?php else: ?>
           <?php the_excerpt(); ?>
-          Skriven av 
-          <?php the_author_link(); ?> 
-          <?php echo get_the_author_link(); ?>
           <a class="post-read-more" href="<?php the_permalink();?>"><?php _e('READ MORE'); ?></a>
+          Skriven av 
+          <?php the_author_posts_link(); ?>
         <?php endif; ?>
        </div>
     </div>
