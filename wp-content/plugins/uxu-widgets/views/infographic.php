@@ -19,7 +19,7 @@
     <h3><?php _e('Festivalens längd', 'uxu'); ?></h3>
     <span class="uxu-infographics-time"> </span>
     <h3><?php _e('Festivalpassets pris'); ?></h3>
-    <span>
+    <span class="uxu-infographics-price-extra-holder">
       <span id="uxu-infographics-price"> </span>
       kr
     </span>
@@ -28,6 +28,9 @@
   <div class="uxu-infographics-stage">
     <div class="bgStep" id="bgStep1" >
       <img src="<?php echo plugins_url('/img/', __DIR__) ?>/1_anim.png" />
+    </div>
+    <div class="peopleStep" id="peopleStep-start">
+      <img src="<?php echo plugins_url('/img/', __DIR__) ?>/publikhavstart.png" />
     </div>
   </div>
 </div>

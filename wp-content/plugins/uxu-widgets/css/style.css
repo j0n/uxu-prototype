@@ -22,7 +22,6 @@
   max-width: 80%; 
   margin: 0.5em auto 0;
 }
-
 .uxu-infographic-knob {
   position: relative;
   height: 200px;
@@ -53,6 +52,10 @@
   display: block;
   font-size: 3em;
   color: #ff8369;
+}
+.uxu-infographics-time, .uxu-infographics-price-extra-holder {
+  min-height: 2em;
+  display: block;
 }
 .uxu-infographics-time-holder {
   max-width: 35%;
@@ -88,8 +91,12 @@
 }
 .peopleStep {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
+}
+#peopleStep-start{
+  z-index: 100;
+  bottom: 0;
 }
 .bgStep {
   position: absolute;
@@ -130,6 +137,9 @@
   }
 }
 @media all and (max-width: 749px) {
+  .uxu-infographics-time, .uxu-infographics-price-extra-holder {
+    min-height: auto;
+  }
   div.uxu-infographics-time-holder, div.uxu-infographics-visitors-holder {
     width: 40%;
     padding: 0.5em 5% 200px;

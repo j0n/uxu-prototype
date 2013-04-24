@@ -40,7 +40,6 @@
   $(document).ready(function(){
     $('.logo img').on('load', function(){
       logoY = $('.logo').outerHeight(true);
-      console.log(logoY);
     });
     if (window.screen.height > 700) {
       logoY = $('.logo').outerHeight(true) - 4;

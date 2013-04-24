@@ -18,7 +18,7 @@
     this.$knowImg = null;
     this.$stage = null;
     this.bgSteps = {
-      3000: {
+      2000: {
         img : '2_anim.png',
         visible: false
       },
