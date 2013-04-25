@@ -11,7 +11,6 @@ Author: Jon
 */
 
 include_once dirname( __FILE__ ) . '/uxu-userhandling-my-products-widget.php';
-include_once dirname( __FILE__ ) . '/uxu-userhangling-register.php';
 function uxu_get_extra_user_fields() {
   $fields = array(
     array(
@@ -77,38 +76,3 @@ function uxu_user_update_extra_fields($user_id){
   }
 
 
-function uxu_update_user($user) {
-  $error = array();
-  /* Update user password. */
-  if ( !empty($_POST['pass1'] ) && !empty( $_POST['pass2'] ) ) {
-    if ( $_POST['pass1'] == $_POST['pass2'] )
-      wp_update_user( array( 'ID' => $user->id, 'user_pass' => esc_attr( $_POST['pass1'] ) ) );
-    else
-      array_push($error, __('The passwords you entered do not match.  Your password was not updated.'));
-  }
-
-  update_usermeta( $user->id, 'first_name', esc_attr( $_POST['first_name'] ) );
-  update_usermeta( $user->id, 'last_name', esc_attr( $_POST['last_name'] ) );
-  if ( !empty( $_POST['nickname'] ) ) {
-    update_usermeta( $user->id, 'nickname', esc_attr( $_POST['nickname'] ) );
-  }
-
-  if (!empty($_POST['email'])){
-    if(filter_var(esc_attr( $_POST['email'] ), FILTER_VALIDATE_EMAIL)) {
-      wp_update_user( array ('ID' => $user->id, 'user_email' => esc_attr( $_POST['email'] )) ) ;
-    }
-    else {
-      array_push($error, __('You have to enter a valid email.'));
-    }
-  }
-  if (!empty( $_POST['website'])) {
-    if(strpos($_POST['website'], 'ttp://')) {
-      update_usermeta( $user->id, 'user_url', esc_attr( $_POST['website'] ) );
-    }
-    else {
-      update_usermeta( $user->id, 'user_url', 'http://' . esc_attr( $_POST['website'] ) );
-    }
-  }
-  uxu_user_update_extra_fields($user->id);
-  return $error;
-}

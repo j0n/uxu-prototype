@@ -18,15 +18,6 @@ if(function_exists("register_field_group"))
 		'id' => 'acf_artist-fields',
 		'title' => 'Artist fields',
 		'fields' => array (
-			array (
-				'key' => 'field_517127eb33926',
-				'label' => 'Frontpage',
-				'name' => 'frontpage',
-				'type' => 'true_false',
-				'instructions' => 'Check to make the artist to appear on frontpage',
-				'message' => '',
-				'default_value' => 0,
-			),
 		),
 		'location' => array (
 			'rules' => array (
