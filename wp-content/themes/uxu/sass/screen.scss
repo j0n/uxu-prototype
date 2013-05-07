@@ -190,6 +190,7 @@ article {
 .uxu-ticket-status {
   @include main();
   border: solid 1px #000;
+  position: relative;
   overflow: hidden;
   float: left;
   h3 {
@@ -204,6 +205,28 @@ article {
   u {
      white-space: nowrap;
   }
+}
+.uxu-ticket-status-mini {
+  display: none;
+  float: left;
+  width: 100%;
+  a {
+    float: right;
+    @include border-radius(5px);
+    color: #FFF;
+    padding: 5px 10px;
+    background: $highlight_color;
+  }
+  .uxu-mini-length {
+    margin-top: 5px;
+    float: left;
+  }
+}
+.uxu-ticket-status-minimize {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.5em;
 }
 .uxu-ticket-button-holder {
   float: right;
@@ -244,6 +267,18 @@ article {
   margin: 0 auto;
   border: solid 1px #000;
   margin: 1em 0;
+}
+.uxu-frontpage-fourth {
+  overflow: hidden;
+}
+.home .type-artists {
+  width: 48%;
+  float: left;
+  margin-right: 1%;
+}
+.home .type-artists:nth-child(2n+1) {
+  margin-right: 0;
+  margin-left: 1%;
 }
 .home .widget_uxu_video_widget {
   width: 80%;
@@ -608,6 +643,15 @@ article {
   }
   .uxu-ticket-button span {
     padding-left: 0;
+  }
+  .uxu-mini-length {
+    display: none;
+  }
+  .uxu-ticket-status-mini a {
+    width: 50%;
+    margin: 0 25%;
+    padding: 0.5em 0;
+    text-align: center;
   }
   .uxu-next-step {
     width: 100%;

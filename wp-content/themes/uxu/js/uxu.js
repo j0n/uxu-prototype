@@ -1,5 +1,49 @@
 (function($) {
+  function toggleTicketStatus (minimize, noAnimate) {
+    if (minimize) {
+      $.cookie('mini', '1');
+      if (typeof noAnimate !== 'undefined') {
+        $('.uxu-ticket-status').css({
+          'padding-top': '0.5em',
+          'padding-bottom': '0.5em'
+        })
+        $('.uxu-ticket-status-full').hide();
+        $('.uxu-ticket-status-mini').show();
+
+      }
+      else {
+        $('.uxu-ticket-status').animate({
+          'padding-top': '0.5em',
+          'padding-bottom': '0.5em'
+        })
+        $('.uxu-ticket-status-full').slideUp();
+        $('.uxu-ticket-status-mini').slideDown();
+      }
+    }
+    else {
+      $.removeCookie('mini');
+      $('.uxu-ticket-status').animate({
+        'padding-top': '1.5em',
+        'padding-bottom': '1.5em'
+      })
+      $('.uxu-ticket-status-full').slideDown();
+      $('.uxu-ticket-status-mini').slideUp();
+    }
+  }
   $(function(){
+    var cookie = $.cookie('mini');
+    if (typeof cookie !== 'undefined') {
+      if (cookie == 1) {
+        toggleTicketStatus(true, true);
+      }
+    }
+
+    $('.uxu-ticket-status-minimize').on('click', function() {
+      toggleTicketStatus(true);
+    });
+    $('.uxu-ticket-status-mini').on('click', function() {
+      toggleTicketStatus(false);
+    });
     $('.usermenu').on('mouseover touchstart', function(e){
       if (!$('.uxu-mobile-menu').is(":visible")) {
         $(this).find('li').slideDown();
