@@ -9,16 +9,10 @@ register_nav_menu( 'loginmenu', __( 'Login Menu') );
 register_nav_menu( 'usermenu', __( 'User Menu') );
 
 function uxu_scripts() {
-  wp_enqueue_script(
-    'jquery-cookie',
-    get_template_directory_uri() . '/js/jquery.cookie.js',
-    array( 'jquery' )
-  );
-  wp_enqueue_script(
-    'uxu-script',
-    get_template_directory_uri() . '/js/uxu.js',
-    array( 'jquery' )
-  );
+  wp_enqueue_script( 'jquery-cookie', get_template_directory_uri() . '/js/jquery.cookie.js', array( 'jquery' ));
+  wp_enqueue_script( 'uxu-script', get_template_directory_uri() . '/js/uxu.js', array( 'jquery' ));
+  wp_enqueue_script( 'uxu-ticket-toggle', get_template_directory_uri() . '/js/uxu.ticketToggle.js', array( 'jquery' ));
+  wp_enqueue_script( 'uxu-sub-menu', get_template_directory_uri() . '/js/uxu.sub.menu.js', array( 'jquery' ));
 }
 add_action( 'wp_enqueue_scripts', 'uxu_scripts' );
 

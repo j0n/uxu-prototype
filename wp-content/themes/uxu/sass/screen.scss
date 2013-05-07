@@ -142,6 +142,18 @@ article {
   float: left;
   border: solid 1px #000;
   text-transform: uppercase;
+  .current-menu-ancestor {
+    background: #000;
+    a {
+      color: #FFF;
+    }
+    li a {
+      color: #000;
+    }
+    .current_page_item{
+      background: transparent;
+    }
+  }
   .current_page_item{
     background: #000;
     a {
@@ -165,6 +177,28 @@ article {
     top: 1em;
     right: 0;
     width: auto;
+  }
+}
+.current-sub-menu {
+  background: #DDD;
+}
+.sub-menu{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: #DDD;
+  float: left;
+  display: none;
+  z-index: 101;
+  border-bottom: solid 1px #000;
+  li {
+    background: #DDD;
+    width: auto;
+    padding: 0 1em;
+    border: none;
+    a {
+      color: #000;
+    }
   }
 }
 .usermenu{
