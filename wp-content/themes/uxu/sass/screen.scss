@@ -300,6 +300,9 @@ article {
   float: left;
   width: 100%;
 }
+.uxu-frontpage-third {
+  float: left;
+}
 .uxu-frontpage-fourth, .uxu-frontpage-third{
   @include main();
   margin: 0 auto;
