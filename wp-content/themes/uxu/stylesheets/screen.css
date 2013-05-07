@@ -972,24 +972,30 @@ article {
   }
 
   /* line 659, ../sass/screen.scss */
+  .sub-menu {
+    border: none;
+    position: static;
+  }
+
+  /* line 663, ../sass/screen.scss */
   .header-menu li, .usermenu ul li {
     width: 100%;
     padding: 0.5em 0;
   }
 
-  /* line 663, ../sass/screen.scss */
+  /* line 667, ../sass/screen.scss */
   .uxu-ticket-status {
     padding: 1em 5% 0.5em;
   }
 
-  /* line 666, ../sass/screen.scss */
+  /* line 670, ../sass/screen.scss */
   .uxu-ticket-status h3 {
     max-width: 100%;
     width: 100%;
     text-align: center;
   }
 
-  /* line 671, ../sass/screen.scss */
+  /* line 675, ../sass/screen.scss */
   .uxu-ticket-button {
     text-align: center;
     width: 96%;
@@ -998,17 +1004,17 @@ article {
     margin-bottom: 1em;
   }
 
-  /* line 678, ../sass/screen.scss */
+  /* line 682, ../sass/screen.scss */
   .uxu-ticket-button span {
     padding-left: 0;
   }
 
-  /* line 681, ../sass/screen.scss */
+  /* line 685, ../sass/screen.scss */
   .uxu-mini-length {
     display: none;
   }
 
-  /* line 684, ../sass/screen.scss */
+  /* line 688, ../sass/screen.scss */
   .uxu-ticket-status-mini a {
     width: 50%;
     margin: 0 25%;
@@ -1016,55 +1022,55 @@ article {
     text-align: center;
   }
 
-  /* line 690, ../sass/screen.scss */
+  /* line 694, ../sass/screen.scss */
   .uxu-next-step {
     width: 100%;
     padding-right: 0;
     text-align: center;
   }
-  /* line 694, ../sass/screen.scss */
+  /* line 698, ../sass/screen.scss */
   .uxu-next-step p {
     display: inline;
     padding-left: 1%;
   }
 
-  /* line 699, ../sass/screen.scss */
+  /* line 703, ../sass/screen.scss */
   .products h2 {
     width: 45%;
     text-align: left;
     line-height: 1.1em;
   }
 
-  /* line 704, ../sass/screen.scss */
+  /* line 708, ../sass/screen.scss */
   .uxu-share-pass-info-btn {
     padding: 0.5em 1em;
   }
 
-  /* line 708, ../sass/screen.scss */
+  /* line 712, ../sass/screen.scss */
   .uxu-date {
     width: 25%;
     padding: 1em 0;
   }
 
-  /* line 712, ../sass/screen.scss */
+  /* line 716, ../sass/screen.scss */
   .inner-content {
     width: 73%;
   }
 
-  /* line 715, ../sass/screen.scss */
+  /* line 719, ../sass/screen.scss */
   .uxu-login-register-box {
     width: 96%;
     margin: 1em 1%;
   }
 
-  /* line 719, ../sass/screen.scss */
+  /* line 723, ../sass/screen.scss */
   .uxu-tml-text {
     width: 90%;
     margin: 1em 5%;
     padding: 0;
   }
 
-  /* line 724, ../sass/screen.scss */
+  /* line 728, ../sass/screen.scss */
   .uxu-ticket-button-holder {
     width: 100%;
   }

@@ -656,6 +656,10 @@ article {
       padding: 0.5em 0;
     }
   }
+  .sub-menu {
+    border: none;
+    position: static;
+  }
   .header-menu li, .usermenu ul li {
     width: 100%;
     padding: 0.5em 0;
