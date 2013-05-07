@@ -296,6 +296,10 @@ article {
     width: 100%;
   }
 }
+.uxu-frontpage-second {
+  float: left;
+  width: 100%;
+}
 .uxu-frontpage-fourth, .uxu-frontpage-third{
   @include main();
   margin: 0 auto;
