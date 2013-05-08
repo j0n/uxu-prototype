@@ -1,19 +1,12 @@
 (function($) {
 
   $(function(){
-    $('.usermenu').on('mouseover touchstart', function(e){
+    $('.usermenu').on('click', function(e){
+      console.log('you');
       if (!$('.uxu-mobile-menu').is(":visible")) {
-        $(this).find('li').slideDown();
+        $(this).find('li').toggle();
         e.preventDefault();
         e.stopPropagation();
-      }
-    });
-    $('.usermenu').on('mouseleave', function(){
-      var self = this;
-      if (!$('.uxu-mobile-menu').is(":visible")) {
-        setTimeout(function(){
-          $(self).find('li:not(:first)').stop(true).slideUp();
-        }, 200);
       }
     });
     $('.uxu-mobile-menu').on('click', function(e) {

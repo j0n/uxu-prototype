@@ -90,6 +90,13 @@ function uxu_widgets_init() {
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
     ));
+    register_sidebar( array(
+      'name' =>       'UxU Blogg Sidebar',
+      'id' => 'uxu_blogg_sidebar',
+      'class' => 'uxu-blogg-sidebar',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+    ));
 }
 add_action( 'widgets_init', 'uxu_widgets_init' );
 

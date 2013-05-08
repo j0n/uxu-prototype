@@ -1,3 +1,6 @@
+<sidebar class="sidebar">
+  <?php if ( dynamic_sidebar('uxu_blogg_sidebar') ) : ?> <?php endif; ?>
+</sidebar>
 <?php $count = 0; ?>
 <?php if (have_posts()): while (have_posts()) : the_post(); ?> 
   

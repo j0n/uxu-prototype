@@ -11,6 +11,14 @@
           this.toggle(true, true);
         }
       }
+      else {
+        if (window.location.href.indexOf('/me') > -1) {
+          this.toggle(true, true);
+        }
+        if (window.location.href.indexOf('/your-profile') > -1) {
+          this.toggle(true, true);
+        }
+      }
       this.events();
     },
     events: function() {

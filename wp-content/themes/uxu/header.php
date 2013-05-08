@@ -31,10 +31,9 @@
             <nav class="header-menu">
               <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
               <?php if ( is_user_logged_in() ) : ?>
-                <?php wp_nav_menu( array(
-                  'theme_location' => 'usermenu',
-                  'container_class' => 'usermenu',
-                ) ); ?>
+                <ul>
+                  <li><a href="<?php echo home_url('/me'); ?>">Min sida</a>
+                </ul>
               <?php else: ?>
                 <?php wp_nav_menu( array( 'theme_location' => 'loginmenu' ) ); ?>
               <?php endif; ?>

@@ -10,6 +10,12 @@
     <?php global $current_user; ?>
     <?php get_currentuserinfo(); ?>
     <div class="uxu-user-page">
+      <?php wp_nav_menu( array(
+        'theme_location' => 'usermenu',
+        'container_class' => 'usermenu',
+      ) ); ?>
+    </div>
+    <div class="uxu-user-page">
       <div class="uxu-user-festival-pass">
         <div class="uxu-user-festival-pass-info">
           <h2><?php _e('Mitt Festivalpass'); ?></h2>

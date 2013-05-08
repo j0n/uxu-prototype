@@ -4,6 +4,12 @@ If you would like to edit this file, copy it to your current theme's directory a
 Theme My Login will always look in your theme's directory first, before using this default template.
 */
 ?>
+<div class="uxu-user-page">
+  <?php wp_nav_menu( array(
+    'theme_location' => 'usermenu',
+    'container_class' => 'usermenu',
+  ) ); ?>
+</div>
 <div class="login profile" id="theme-my-login<?php $template->the_instance(); ?>">
 	<?php $template->the_action_template_message( 'profile' ); ?>
 	<?php $template->the_errors(); ?>

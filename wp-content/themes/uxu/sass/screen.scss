@@ -162,6 +162,7 @@ article {
   }
   li {
     width: 12.5%;
+    position: relative;
     text-align: center;
     float: left;
     border-left: solid 1px #000;
@@ -183,9 +184,8 @@ article {
   background: #DDD;
 }
 .sub-menu{
-  position: absolute;
   width: 100%;
-  left: 0;
+  position: absolute;
   background: #DDD;
   float: left;
   display: none;
@@ -193,8 +193,8 @@ article {
   border-bottom: solid 1px #000;
   li {
     background: #DDD;
-    width: auto;
-    padding: 0 1em;
+    width: 100%;
+    padding: 0;
     border: none;
     a {
       color: #000;
@@ -203,22 +203,19 @@ article {
 }
 .usermenu{
   float: left;
-  width: 12.5%;
+  width: 100%;
   padding: 0;
   position: relative;
-  ul {
-    position: absolute;
-    width: 100%;
-  }
-  li:first-child{
-    display: block;
-  }
   li {
-    display: none;
+    float: left;
     background: #FFF;
-    width: 94%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding: 5px 3%;
+  }
+  .current-menu-item {
+    background: #000;
+    a {
+      color: #FFF;
+    }
   }
 }
 .uxu-ticket-status {
@@ -469,10 +466,26 @@ article {
 }
 /*blogg */
 #container {
-  @include main();
   float: left;
+  width: 100%;
   margin-top: 2em;
   padding-top: 3em;
+  article {
+    float: left;
+    width: 75%;
+  }
+}
+.sidebar {
+  float: right;
+  width: 20%;
+  border: solid 1px #000;
+  padding: 1em 2%;
+  h2 {
+    margin-bottom:0;
+  }
+  .widget {
+    margin-bottom: 1em;
+  }
 }
 .sticky {
    position: relative;
@@ -495,6 +508,9 @@ article {
   }
   a {
     color: #000;
+  }
+  .uxu-post-comment {
+    display: none;
   }
 }
 .uxu-date{
