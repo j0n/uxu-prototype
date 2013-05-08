@@ -216,9 +216,14 @@ article { margin-bottom: 1em; overflow: hidden; }
 .uxu-is-sticky .uxu-change-lang { display: none; }
 
 .footer { margin-top: 4em; margin-bottom: 1em; overflow: hidden; }
-.footer .menu { text-transform: uppercase; }
+.footer .menu { text-transform: uppercase; width: 20%; }
 .footer li { display: inline-block; border-right: solid 1px #000; }
 .footer li a { display: block; padding: 0.2em 0.3em 0 0; }
+.footer .mockup { width: 40%; }
+.footer .menu { float: left; }
+.footer .menu li { border: none; display: block; margin: 5px 0; }
+.footer .menu li a:before { content: '>'; display: inline; }
+.footer .mockup { float: left; }
 
 @media all and (max-width: 1199px) { /* if screen same as page, add margin */
   .page #primary { width: 90%; padding: 1.5em 5%; border: solid 1px #000; }
@@ -251,4 +256,6 @@ article { margin-bottom: 1em; overflow: hidden; }
   .inner-content { width: 73%; }
   .uxu-login-register-box { width: 96%; margin: 1em 1%; }
   .uxu-tml-text { width: 90%; margin: 1em 5%; padding: 0; }
-  .uxu-ticket-button-holder { width: 100%; } }
+  .uxu-ticket-button-holder { width: 100%; }
+  .footer .menu, .footer .mockup { margin: 1em 0; width: 100%; }
+  .footer .mockup { text-align: center; } }

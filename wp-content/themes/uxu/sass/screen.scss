@@ -593,6 +593,7 @@ article {
   overflow: hidden;
   .menu {
     text-transform: uppercase;
+    width: 20%;
   }
   li {
     display: inline-block;
@@ -601,6 +602,24 @@ article {
       display: block;
       padding: 0.2em 0.3em 0 0;
     }
+  }
+  .mockup {
+    width: 40%;
+  }
+  .menu {
+    float: left;
+    li {
+      border: none;
+      display: block;
+      margin: 5px 0;
+      a:before{
+        content: '>';
+        display: inline;
+      }
+    }
+  }
+  .mockup {
+    float: left;
   }
 }
 
@@ -737,5 +756,14 @@ article {
   }
   .uxu-ticket-button-holder {
     width: 100%;
+  }
+  .footer {
+    .menu, .mockup {
+      margin: 1em 0;
+      width: 100%;
+    }
+    .mockup {
+      text-align: center;
+    }
   }
 }

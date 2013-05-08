@@ -4,6 +4,12 @@
           <img src="<?php echo get_template_directory_uri();  ?>/images/logo.jpg" alt="logo" />
         </a>
         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+        <div class="mockup">
+          <img src="<?php echo get_template_directory_uri();  ?>/images/mockup-social.png" alt="hejhej" />
+        </div>
+        <div class="mockup">
+          <img src="<?php echo get_template_directory_uri();  ?>/images/mockup-newsletter.png" alt="hejdå" />
+        </div>
  </footer>
 </div>
 <div id="fb-root"></div>
