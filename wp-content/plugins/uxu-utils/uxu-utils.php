@@ -64,10 +64,10 @@ add_action( 'wp_enqueue_scripts', 'uxu_utils_scripts' );
 function uxu_tickets_info(){
   $values = array(
     'current_ticket_url' => 'http://jonandersson.se/uxu/prototype/julius/additional.html',
-    'current_ticket_price' => '586',
+    'current_ticket_price' => '560',
     'current_ticket_left' => 30,
     'next_ticket_price' => '250',
-    'tickets_sold' => 3000
+    'tickets_sold' => 500
   );
   return $values;
 }

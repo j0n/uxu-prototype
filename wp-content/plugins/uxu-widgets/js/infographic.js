@@ -112,7 +112,7 @@
     },
     update: function(v, end) {
        v = (this.lap * 360) + v;
-       this.visitors = Math.floor(v*13.5);
+       this.visitors = Math.floor(v*3);
        if (this.visitors <= this.goalVisitor && !this.movingForward) {
          this.visitors = this.goalVisitor;
          if (!this.bottom) {
@@ -131,7 +131,7 @@
            this.$knob.trigger( 'configure', { "fgColor":"#000000" });
            this.bottom = false;
          }
-          if (this.visitors > 15015) {
+          if (this.visitors > 3000) {
             this.price = 1450;
           }
           else if(this.visitors > 0 && this.visitors < 150) {
@@ -152,10 +152,19 @@
           else {
             this.price = (Math.floor(this.visitors/100) * 4) + 466;
           }
-          if (this.visitors > this.maxThreshold) {
-            this.$visitors.html('SOLD OUT');
+
+          if (this.visitors > 3000) {
+            this.$knob.trigger( 'configure', { "fgColor":"#68b481" });
+            $('.uxu-infographics-pass-text').html('Ordinarie festivalpass');
+            if (this.visitors > this.maxThreshold) {
+              this.$visitors.html('SOLD OUT');
+            }
+            else {
+              this.$visitors.html(this.visitors);
+            }
           }
           else {
+            this.$knob.trigger( 'configure', { "fgColor":"#000000" });
             this.$time.html(UxU.utils.durationFromVisitors(this.visitors));
             this.$visitors.html(this.visitors);
           }
